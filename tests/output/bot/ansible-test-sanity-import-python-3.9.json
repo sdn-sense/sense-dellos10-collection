@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible-core/2.15/dev_guide/testing/sanity/import.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test import --python 3.9` [[explain](https://docs.ansible.com/ansible-core/2.15/dev_guide/testing/sanity/import.html)] failed with 6 errors:", 
+            "output": "plugins/action/dellos10.py:13:0: traceback: ModuleNotFoundError: No module named 'ansible_collections.ansible.netcommon'\nplugins/cliconf/dellos10.py:11:0: traceback: ModuleNotFoundError: No module named 'ansible_collections.ansible.netcommon'\nplugins/module_utils/network/dellos10.py:12:0: traceback: ImportError: import of \"ansible.utils\" is not allowed in this context\nplugins/modules/dellos10_command.py:13:0: traceback: ImportError: import of \"ansible.utils\" is not allowed in this context\nplugins/modules/dellos10_config.py:8:0: traceback: ImportError: import of \"ansible.utils\" is not allowed in this context\nplugins/modules/dellos10_facts.py:13:0: traceback: ImportError: import of \"ansible.utils\" is not allowed in this context"
+        }
+    ], 
+    "verified": false
+}

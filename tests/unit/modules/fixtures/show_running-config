@@ -1,0 +1,522 @@
+Current Configuration ...
+! Version 9.14(2.7)
+! Last configuration change at Thu Jul  6 19:58:01 2023 by sense
+! Startup-config last updated at Thu Jul  6 19:58:01 2023 by sense
+!
+boot system stack-unit 1 primary system://B
+boot system stack-unit 1 secondary system://A
+boot system stack-unit 1 default system://A
+!
+hardware watchdog stack-unit 1
+hardware watchdog stack-unit 2
+hardware watchdog stack-unit 3
+hardware watchdog stack-unit 4
+hardware watchdog stack-unit 5
+hardware watchdog stack-unit 6
+!
+logging coredump stack-unit  1
+logging coredump stack-unit  2
+logging coredump stack-unit  3
+logging coredump stack-unit  4
+logging coredump stack-unit  5
+logging coredump stack-unit  6
+!
+hostname LRT-SDN-R02-Dell-Z9100
+!
+feature vrf
+!
+protocol lldp
+ advertise dot1-tlv port-protocol-vlan-id port-vlan-id
+ advertise dot3-tlv max-frame-size
+ advertise management-tlv system-capabilities system-description system-name
+!
+redundancy auto-synchronize full
+!
+cam-acl l2acl 2 ipv4acl 2 ipv6acl 0 ipv4qos 2 l2qos 0 l2pt 0 ipmacacl 0 vman-qos 0 openflow 3
+!
+cam-acl-vlan vlanopenflow 1 vlaniscsi 1
+!
+username sense password 7 278486fnajksdfnaksf2 privilege 15
+!
+ip vrf lhcone 1
+!
+default-vlan disable
+!
+protocol spanning-tree rstp
+!
+protocol spanning-tree pvst
+ no disable
+ extend system-id
+!
+vlan-stack protocol-type 1
+!
+allow unsupported-transceiver
+!
+stack-unit 1 provision Z9100-ON
+!
+stack-unit 1 port 26 portmode single speed 40G
+!
+stack-unit 1 port 29 portmode single speed 40G
+!
+stack-unit 1 port 30 portmode single speed 40G
+!
+interface hundredGigE 1/1
+ description 'Port-channel 102'
+ no ip address
+ mtu 9416
+ no shutdown
+ no intf-type cr4 autoneg
+ no fec enable
+!
+interface hundredGigE 1/2
+ description 'Port-channel 102'
+ no ip address
+ mtu 9416
+ no shutdown
+ no intf-type cr4 autoneg
+ no fec enable
+!
+interface hundredGigE 1/3
+ description Wedge-R02-port-5
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+ fec enable
+!
+interface hundredGigE 1/4
+ description SN3700-R02-port-5
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+ fec enable
+!
+interface hundredGigE 1/5
+ description PRP node
+ no ip address
+ mtu 9416
+ switchport
+ spanning-tree pvst edge-port
+ no shutdown
+!
+interface hundredGigE 1/6
+ description sandie-4
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface hundredGigE 1/7
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface hundredGigE 1/8
+ no ip address
+ mtu 9416
+ no shutdown
+ fec enable
+!
+interface hundredGigE 1/9
+ no ip address
+ mtu 9416
+ no shutdown
+ fec enable
+!
+interface hundredGigE 1/10
+ description sandie-1
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface hundredGigE 1/11
+ description sandie-5
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface hundredGigE 1/12
+ description sandie-6
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface hundredGigE 1/13
+ no ip address
+ mtu 9416
+ no shutdown
+!
+interface hundredGigE 1/14
+ no ip address
+ mtu 9416
+ no shutdown
+!
+interface hundredGigE 1/15
+ no ip address
+ mtu 9416
+ no shutdown
+!
+interface hundredGigE 1/16
+ no ip address
+ mtu 9416
+ no shutdown
+!
+interface hundredGigE 1/17
+ no ip address
+ mtu 9416
+ no shutdown
+!
+interface hundredGigE 1/18
+ description Wedge-XXX
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface hundredGigE 1/19
+ no ip address
+ mtu 9416
+ no shutdown
+!
+interface hundredGigE 1/20
+ description Wedge-XXX
+ no ip address
+ mtu 9416
+ no shutdown
+!
+interface hundredGigE 1/21
+ description k8s node
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+ no intf-type cr4 autoneg
+ fec enable
+!
+interface hundredGigE 1/22
+ description k8s-ceph-01
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface hundredGigE 1/23
+ description sdn-dtn-1-7
+ no ip address
+ mtu 9416
+ portmode hybrid
+ switchport
+ no shutdown
+!
+interface hundredGigE 1/24
+ description PRP AMD Node
+ no ip address
+ mtu 9416
+ switchport
+ spanning-tree pvst edge-port
+ no shutdown
+!
+interface hundredGigE 1/25
+ description sandie-10
+ no ip address
+ mtu 9416
+ switchport
+ spanning-tree pvst edge-port
+ no shutdown
+!
+interface fortyGigE 1/26/1
+ description Dell S4810
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface hundredGigE 1/27
+ description sdn-dtn-2-11
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface hundredGigE 1/28
+ description R1-Arista-706-CX-32S
+ no ip address
+ mtu 9416
+ no shutdown
+!
+interface fortyGigE 1/29/1
+ description sdn-dtn-2-09
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface fortyGigE 1/30/1
+ description sandie-3
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface hundredGigE 1/31
+ description sdn-dtn-2-10
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface hundredGigE 1/32
+ description sandie-7
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface TenGigabitEthernet 1/33
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface TenGigabitEthernet 1/34
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface ManagementEthernet 1/1
+ no shutdown
+!
+interface Port-channel 101
+ no ip address
+ shutdown
+!
+interface Port-channel 102
+ no ip address
+ mtu 9416
+ switchport
+ channel-member hundredGigE 1/1,1/2
+ no shutdown
+!
+interface Port-channel 103
+ description PortChannel to PB-Z9264F
+ no ip address
+ mtu 9416
+ switchport
+ channel-member hundredGigE 1/9,1/13,1/14,1/15,1/16
+ no shutdown
+!
+interface Port-channel 104
+ description PortChannel to Arista-R02
+ no ip address
+ mtu 9416
+ switchport
+ channel-member hundredGigE 1/17,1/19
+ no shutdown
+!
+interface Vlan 1
+!
+interface Vlan 16
+ ip address 172.20.1.1/23
+ mtu 9416
+ tagged TenGigabitEthernet 1/33-1/34
+ tagged fortyGigE 1/26/1,1/29/1-1/30/1
+ tagged hundredGigE 1/6,1/10,1/22-1/23,1/27,1/31-1/32
+ tagged Port-channel 102
+ no shutdown
+!
+interface Vlan 43
+ ip vrf forwarding lhcone
+ ip address 198.32.43.1/25
+ ipv6 address 2605:d9c0:2:10::1/60
+ mtu 9416
+ tagged TenGigabitEthernet 1/33-1/34
+ tagged fortyGigE 1/26/1,1/29/1-1/30/1
+ tagged hundredGigE 1/3-1/4,1/6,1/10-1/12,1/21-1/23,1/25,1/27,1/31-1/32
+ tagged Port-channel 102,104
+ untagged hundredGigE 1/5,1/24
+ no shutdown
+!
+interface Vlan 67
+ description P2P LRT building SDN testbed
+ ip vrf forwarding lhcone
+ ip address 192.84.86.239/31
+ ipv6 address 2605:d9c0:0:ff02::1/127
+ mtu 9416
+ tagged Port-channel 103
+ no shutdown
+!
+interface Vlan 100
+ description Kubernetes Multus for SENSE
+ ip vrf forwarding lhcone
+ no ip address
+ ipv6 address 2605:d9c0:2:fff9::1/64
+ mtu 9416
+ tagged fortyGigE 1/29/1-1/30/1
+ tagged hundredGigE 1/10-1/12,1/23,1/25,1/27
+ tagged Port-channel 102
+ no shutdown
+!
+interface Vlan 101
+ description Kubernetes Multus for SENSE-Rucio XRootD fff1 IPv6 Range
+ ip vrf forwarding lhcone
+ no ip address
+ ipv6 address 2605:d9c0:2:fff1::1/64
+ mtu 9416
+ ipv6 nd ra-lifetime 0
+ tagged fortyGigE 1/29/1-1/30/1
+ tagged hundredGigE 1/10-1/12,1/23,1/25,1/27
+ tagged Port-channel 102
+ no shutdown
+!
+interface Vlan 102
+ description Kubernetes Multus for SENSE-Rucio XRootD fff2 IPv6 Range
+ ip vrf forwarding lhcone
+ no ip address
+ ipv6 address 2605:d9c0:2:fff2::1/64
+ mtu 9416
+ tagged fortyGigE 1/29/1-1/30/1
+ tagged hundredGigE 1/10-1/12,1/23,1/25,1/27
+ tagged Port-channel 102
+ no shutdown
+!
+interface Vlan 103
+ description Kubernetes Multus for SENSE-Rucio XRootD fff3 IPv6 Range
+ ip vrf forwarding lhcone
+ no ip address
+ ipv6 address 2605:d9c0:2:fff3::1/64
+ mtu 9416
+ tagged fortyGigE 1/29/1-1/30/1
+ tagged hundredGigE 1/10-1/12,1/23,1/25,1/27
+ tagged Port-channel 102
+ no shutdown
+!
+interface Vlan 300
+ description "testing BIDI transceiver"
+ ip address 172.20.10.10/24
+ shutdown
+!
+interface Vlan 1234
+ description test-vlan-ignore
+ no ip address
+ no shutdown
+!
+interface Vlan 3873
+ description urn:ogf:network:service+899620b2-4009-49bf-8bbd-ee54776df622:vt+l2-policy::Connection_1
+ ip vrf forwarding lhcone
+ name Vlan 3873
+ no ip address
+ ipv6 address fc00:1788::1:2c02/64
+ mtu 9416
+ tagged Port-channel 103
+ no shutdown
+!
+interface Vlan 3874
+ description urn:ogf:network:service+1620997b-2343-41ca-82fc-f6e53458bc76:vt+l2-policy::Connection_1
+ ip vrf forwarding lhcone
+ name Vlan 3874
+ no ip address
+ mtu 9416
+ tagged hundredGigE 1/23
+ tagged Port-channel 103
+ no shutdown
+!
+interface Vlan 3912
+ description urn:ogf:network:service+39be31cb-d762-4525-ba9e-3b28d7d5b8cf:vt+l2-policy::Connection_1
+ ip vrf forwarding lhcone
+ name Vlan 3912
+ no ip address
+ mtu 9416
+ tagged hundredGigE 1/10
+ tagged Port-channel 103
+ no shutdown
+!
+port-channel failover-group
+!
+route-map sense-c40cfadd5b6240bb8587dd683204204b-mapin permit 10
+ match ipv6 address sense-c40cfadd5b6240bb8587dd683204204b-from
+!
+route-map sense-c40cfadd5b6240bb8587dd683204204b-mapout permit 10
+ match ipv6 address sense-c40cfadd5b6240bb8587dd683204204b-to
+!
+ipv6 prefix-list sense-c40cfadd5b6240bb8587dd683204204b-from
+ seq 5 permit 2001:48d0:3001:111::/64
+!
+ipv6 prefix-list sense-c40cfadd5b6240bb8587dd683204204b-to
+ seq 5 permit 2605:d9c0:2:fff1::/64
+!
+router bgp 64513
+ !
+ address-family ipv4 vrf lhcone
+  neighbor fc00:1788::1:2c03 remote-as 65000
+  no neighbor fc00:1788::1:2c03 activate
+  neighbor fc00:1788::1:2c03 no shutdown
+  exit-address-family
+ !
+ address-family ipv6 unicast vrf lhcone
+  network 2605:d9c0:2:fff1::/64
+  neighbor fc00:1788::1:2c03 activate
+  neighbor fc00:1788::1:2c03 route-map sense-c40cfadd5b6240bb8587dd683204204b-mapin in
+  neighbor fc00:1788::1:2c03 route-map sense-c40cfadd5b6240bb8587dd683204204b-mapout out
+  exit-address-family
+!
+ipv6 route vrf lhcone ::/0 2605:d9c0:0:ff02::
+ip route vrf lhcone 0.0.0.0/0 192.84.86.238
+ipv6 route vrf lhcone 2605:d9c0:2::/48 NULL 0
+!
+ip domain-list ultralight.org
+ip domain-list hep.caltech.edu
+ip domain-list tier2
+ip domain-lookup
+ip name-server 198.32.44.61
+ip name-server 198.32.44.62
+ip name-server 131.215.207.45
+!
+logging 198.32.44.18
+!
+!
+clock timezone PST -8
+clock summer-time PDT recurring
+!
+ip ssh server vrf any
+ip ssh connection-rate-limit 60
+ip ssh server enable
+!
+line console 0
+line vty 0
+ exec-timeout 0 0
+ access-class ACL-VTY-IN
+line vty 1
+ access-class ACL-VTY-IN
+line vty 2
+ access-class ACL-VTY-IN
+line vty 3
+ access-class ACL-VTY-IN
+line vty 4
+ access-class ACL-VTY-IN
+line vty 5
+ access-class ACL-VTY-IN
+line vty 6
+ access-class ACL-VTY-IN
+line vty 7
+ access-class ACL-VTY-IN
+line vty 8
+ access-class ACL-VTY-IN
+line vty 9
+ access-class ACL-VTY-IN
+!
+control-plane-cpuqos
+!
+reload-type
+ boot-type normal-reload
+ config-scr-download enable
+!
+logging extended
+!
+login statistics enable
+!
+end

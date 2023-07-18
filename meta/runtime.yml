@@ -1,0 +1,8 @@
+plugin_routing:
+  action:
+    dellos10_config:
+      redirect: sense.dellos10.dellos10
+    dellos10_command:
+      redirect: sense.dellos10.dellos10
+    dellos10_facts:
+      redirect: sense.dellos10.dellos10

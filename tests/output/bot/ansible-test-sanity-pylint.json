@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible-core/2.15/dev_guide/testing/sanity/pylint.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test pylint` [[explain](https://docs.ansible.com/ansible-core/2.15/dev_guide/testing/sanity/pylint.html)] failed with 6 errors:", 
+            "output": "plugins/module_utils/network/dellos10.py:12:0: ansible-bad-module-import: Import external package or ansible.module_utils not ansible.utils.display\nplugins/modules/dellos10_command.py:13:0: ansible-bad-module-import: Import external package or ansible.module_utils not ansible.utils.display\nplugins/modules/dellos10_config.py:8:0: ansible-bad-module-import: Import external package or ansible.module_utils not ansible.utils.display\nplugins/modules/dellos10_facts.py:13:0: ansible-bad-module-import: Import external package or ansible.module_utils not ansible.utils.display\ntests/unit/modules/test_dellos10_facts.py:7:0: unused-wildcard-import: Unused import(s) asyncio, contextlib, io, inspect, pprint, sys, builtins, FILTER_DIR, sentinel, DEFAULT, Base, NonCallableMock, CallableMixin, Mock, magic_methods, numerics, inplace, right, MagicMixin, NonCallableMagicMock, AsyncMagicMixin, MagicMock, MagicProxy, AsyncMockMixin, AsyncMock, ANY, call, create_autospec, FunctionTypes, file_spec, mock_open, PropertyMock, seal, iscoroutinefunction, CodeType, ModuleType, MethodType, safe_repr, wraps and partial from wildcard import of unittest.mock\ntests/unit/modules/test_dellos10_facts.py:7:0: wildcard-import: Wildcard import unittest.mock"
+        }
+    ], 
+    "verified": false
+}

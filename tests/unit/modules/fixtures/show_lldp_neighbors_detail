@@ -1,0 +1,1343 @@
+========================================================================
+ Local Interface Hu 1/1 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 27723
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 0
+  Total TLVs Discarded: 0
+  Next packet will be sent after 25 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  34:17:eb:4c:1e:80
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  hundredGigE 1/32
+    Local Port ID: hundredGigE 1/1
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 117 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote MTU:  9416
+    Remote System Name:  LRT-SDN-R03-Dell-Z9100
+    Remote System Desc:  Dell Real Time Operating System Software. Dell
+     Operating System Version: 2.0. Dell Application Software Version:
+     9.11(0.0P6) Copyright (c) 1999-2017Dell Inc. All Rights Reserved.Build
+     Time: Mon Feb 27 16:57:20 2017
+    Existing System Capabilities:  Repeater Bridge Router
+    Enabled System Capabilities:  Repeater Bridge Router
+    Port and Protocol Vlan ID: 0, Capability: Not Supported, Status: Not Enabled
+    UnknownTLVList:
+    OrgUnknownTLVList:
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/2 has 1 neighbor
+  Total Frames Out: 27531
+  Total Frames In: 27722
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 0
+  Total TLVs Discarded: 0
+  Next packet will be sent after 29 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  34:17:eb:4c:1e:80
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  hundredGigE 1/31
+    Local Port ID: hundredGigE 1/2
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 113 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote MTU:  9416
+    Remote System Name:  LRT-SDN-R03-Dell-Z9100
+    Remote System Desc:  Dell Real Time Operating System Software. Dell
+     Operating System Version: 2.0. Dell Application Software Version:
+     9.11(0.0P6) Copyright (c) 1999-2017Dell Inc. All Rights Reserved.Build
+     Time: Mon Feb 27 16:57:20 2017
+    Existing System Capabilities:  Repeater Bridge Router
+    Enabled System Capabilities:  Repeater Bridge Router
+    Port and Protocol Vlan ID: 0, Capability: Not Supported, Status: Not Enabled
+    UnknownTLVList:
+    OrgUnknownTLVList:
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/3 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28414
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 0
+  Total TLVs Discarded: 0
+  Next packet will be sent after 9 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  00:15:18:0b:60:38
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  sdn5
+    Remote Port Description:  sdn5
+    Local Port ID: hundredGigE 1/3
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 115 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  BUR0051
+    Remote System Desc:  freeRouter v22.9.28-cur, done by cs@nop.
+    Existing System Capabilities:  Bridge Router
+    Enabled System Capabilities:  Bridge Router
+    UnknownTLVList:
+    OrgUnknownTLVList:
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/4 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28412
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28412
+  Total TLVs Discarded: 0
+  Next packet will be sent after 10 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  b8:59:9f:d1:34:aa
+    Remote Port Subtype:  Locally assigned (7)
+    Remote Port ID:  etp5
+    Remote Port Description:  Ethernet16
+    Local Port ID: hundredGigE 1/4
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 116 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  lrt-sdn-r02-mlnx-sn3700
+    Remote Management Address (IPv4):  172.16.0.234
+    Remote System Desc:  SONiC Software Version:
+     SONiC.master.86916-a5018e73a - HwSku: ACS-MSN3700 - Distribution: Debian
+     11.3 - Kernel: 5.10.0-8-2-amd64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Bridge Router
+    MAC PHY Configuration:
+      Auto-neg supported: 0
+      Auto-neg enabled: 0
+      Auto-neg advertised capabilities:
+
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/5 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 85
+  Total Neighbor information Age outs: 28
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 85
+  Total TLVs Discarded: 0
+  Next packet will be sent after 15 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  0c:c4:7a:d9:b4:8c
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  ec:0d:9a:92:b2:36
+    Remote Port Description:  ens2
+    Local Port ID: hundredGigE 1/5
+    Locally assigned remote Neighbor Index: 29
+    Remote TTL:  120
+    Information valid for next 116 seconds
+    Time since last information change of this neighbor:  00:01:34
+    Remote System Name:  k8s-nvme-01.ultralight.org
+    Remote Management Address (IPv4):  172.16.0.3
+    Remote Management Address (IPv6):  fe80::ec4:7aff:fed9:b48d
+    Remote System Desc:  Alpine Linux v3.15 Linux 5.4.0-152-generic
+     #169-Ubuntu SMP Tue Jun 6 22:23:09 UTC 2023 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Router
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 1
+      Auto-neg advertised capabilities:
+        1000BASE-X, -LX, -SX, -CX full duplex mode,
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/6 has 1 neighbor
+  Total Frames Out: 27531
+  Total Frames In: 28647
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28645
+  Total TLVs Discarded: 0
+  Next packet will be sent after 18 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  0c:c4:7a:fb:44:14
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  24:8a:07:55:29:cc
+    Remote Port Description:  ens2np0
+    Local Port ID: hundredGigE 1/6
+    Locally assigned remote Neighbor Index: 3
+    Remote TTL:  120
+    Information valid for next 103 seconds
+    Time since last information change of this neighbor:  1w0d2h
+    Remote System Name:  sandie-4.ultralight.org
+    Remote Management Address (IPv4):  172.16.1.37
+    Remote Management Address (IPv6):  2605:d9c0:2:10::1:4
+    Remote System Desc:  CentOS Stream 8 Linux 5.16.8-1.el8.elrepo.x86_64
+     #1 SMP PREEMPT Mon Feb 7 18:18:49 EST 2022 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Bridge Router
+    Vlan Names(s):
+      Vlan ID:   43, Name: ens2np0.43
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 1
+      Auto-neg advertised capabilities:
+        1000BASE-X, -LX, -SX, -CX full duplex mode,
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/9 has 1 neighbor
+  Total Frames Out: 27501
+  Total Frames In: 28377
+  Total Neighbor information Age outs: 1
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 141885
+  Total TLVs Discarded: 0
+  Next packet will be sent after 13 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  20:04:0f:4a:4f:c4
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  ethernet1/1/32
+    Remote Port Description:  LRT
+    Local Port ID: hundredGigE 1/9
+    Locally assigned remote Neighbor Index: 2
+    Remote TTL:  120
+    Information valid for next 106 seconds
+    Time since last information change of this neighbor:  1w0d2h
+    Remote MTU:  9216
+    Remote System Name:  PB-R05-Dell-Z9264F
+    Remote Management Address (IPv4):  192.168.255.99
+    Remote Management Address (IPv6):  fe80::2204:fff:fe4a:4fc4
+    Remote System Desc:  Dell EMC Networking OS10 Enterprise. Copyright
+     (c) 1999-2020 by Dell Inc. All Rights Reserved. System Description: OS10
+     Enterprise. OS Version: 10.5.2.0P1. System Type: Z9264F-ON
+    Existing System Capabilities:  Repeater Bridge Router
+    Enabled System Capabilities:  Repeater Bridge Router
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 0
+      Auto-neg advertised capabilities:
+        1000BASE-T half duplex mode
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((f8-b1-56), 24,  1)  ((f8-b1-56), 23,  1)  ((f8-b1-56), 22,  1)  ((f8-b1-56), 21,  7)  ((00-80-c2),  7,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/10 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28447
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28447
+  Total TLVs Discarded: 0
+  Next packet will be sent after 4 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  e4:1d:2d:fd:c4:cc
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  e4:1d:2d:62:0c:66
+    Remote Port Description:  mlx4p2s1
+    Local Port ID: hundredGigE 1/10
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 106 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  sandie-1.ultralight.org
+    Remote Management Address (IPv4):  172.16.1.32
+    Remote Management Address (IPv6):  2605:d9c0:2:10::1:1
+    Remote System Desc:  CentOS Stream 8 Linux 6.3.9-1.el8.elrepo.x86_64 #1
+     SMP PREEMPT_DYNAMIC Wed Jun 21 20:41:11 EDT 2023 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Bridge Router
+    Vlan Names(s):
+      Vlan ID:   43, Name: mlx4p2s1.43
+      Vlan ID:  100, Name: mulsense
+      Vlan ID:  101, Name: sensexrd1
+      Vlan ID:  102, Name: sensexrd2
+      Vlan ID:  103, Name: sensexrd3
+      Vlan ID: 3912, Name: vlan.3912
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 1
+      Auto-neg advertised capabilities:
+        1000BASE-X, -LX, -SX, -CX full duplex mode,
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/11 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28489
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28489
+  Total TLVs Discarded: 0
+  Next packet will be sent after 7 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  a0:42:3f:38:f6:1b
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  24:8a:07:9c:00:96
+    Remote Port Description:  mlx4p1s2
+    Local Port ID: hundredGigE 1/11
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 110 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  sandie-5.ultralight.org
+    Remote Management Address (IPv4):  172.16.1.42
+    Remote Management Address (IPv6):  2605:d9c0:2:10::1:5
+    Remote System Desc:  CentOS Stream 8 Linux 6.3.9-1.el8.elrepo.x86_64 #1
+     SMP PREEMPT_DYNAMIC Wed Jun 21 20:41:11 EDT 2023 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Bridge Router
+    Vlan Names(s):
+      Vlan ID:   43, Name: mlx4p1s2.43
+      Vlan ID:  100, Name: mulsense
+      Vlan ID:  101, Name: sensexrd1
+      Vlan ID:  102, Name: sensexrd2
+      Vlan ID:  103, Name: sensexrd3
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 1
+      Auto-neg advertised capabilities:
+        1000BASE-X, -LX, -SX, -CX full duplex mode,
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/12 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 29056
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 29056
+  Total TLVs Discarded: 0
+  Next packet will be sent after 11 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  ec:0d:9a:65:dd:05
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  ec:0d:9a:65:dd:04
+    Remote Port Description:  mlx4p1s2
+    Local Port ID: hundredGigE 1/12
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 119 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  sandie-6.ultralight.org
+    Remote Management Address (IPv4):  172.16.1.43
+    Remote Management Address (IPv6):  2605:d9c0:2:10::1:6
+    Remote System Desc:  CentOS Stream 8 Linux 6.3.9-1.el8.elrepo.x86_64 #1
+     SMP PREEMPT_DYNAMIC Wed Jun 21 20:41:11 EDT 2023 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Bridge Router
+    Vlan Names(s):
+      Vlan ID:   43, Name: mlx4p1s2.43
+      Vlan ID:  100, Name: mulsense
+      Vlan ID:  101, Name: sensexrd1
+      Vlan ID:  102, Name: sensexrd2
+      Vlan ID:  103, Name: sensexrd3
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 1
+      Auto-neg advertised capabilities:
+        1000BASE-X, -LX, -SX, -CX full duplex mode,
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/13 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28405
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 142025
+  Total TLVs Discarded: 0
+  Next packet will be sent after 13 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  20:04:0f:4a:4f:c4
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  ethernet1/1/30
+    Remote Port Description:  LRT
+    Local Port ID: hundredGigE 1/13
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 97 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote MTU:  9216
+    Remote System Name:  PB-R05-Dell-Z9264F
+    Remote Management Address (IPv4):  192.168.255.99
+    Remote Management Address (IPv6):  fe80::2204:fff:fe4a:4fc4
+    Remote System Desc:  Dell EMC Networking OS10 Enterprise. Copyright
+     (c) 1999-2020 by Dell Inc. All Rights Reserved. System Description: OS10
+     Enterprise. OS Version: 10.5.2.0P1. System Type: Z9264F-ON
+    Existing System Capabilities:  Repeater Bridge Router
+    Enabled System Capabilities:  Repeater Bridge Router
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 0
+      Auto-neg advertised capabilities:
+        1000BASE-T half duplex mode
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((f8-b1-56), 24,  1)  ((f8-b1-56), 23,  1)  ((f8-b1-56), 22,  1)  ((f8-b1-56), 21,  7)  ((00-80-c2),  7,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/14 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28405
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 142025
+  Total TLVs Discarded: 0
+  Next packet will be sent after 18 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  20:04:0f:4a:4f:c4
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  ethernet1/1/29
+    Remote Port Description:  LRT
+    Local Port ID: hundredGigE 1/14
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 97 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote MTU:  9216
+    Remote System Name:  PB-R05-Dell-Z9264F
+    Remote Management Address (IPv4):  192.168.255.99
+    Remote Management Address (IPv6):  fe80::2204:fff:fe4a:4fc4
+    Remote System Desc:  Dell EMC Networking OS10 Enterprise. Copyright
+     (c) 1999-2020 by Dell Inc. All Rights Reserved. System Description: OS10
+     Enterprise. OS Version: 10.5.2.0P1. System Type: Z9264F-ON
+    Existing System Capabilities:  Repeater Bridge Router
+    Enabled System Capabilities:  Repeater Bridge Router
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 0
+      Auto-neg advertised capabilities:
+        1000BASE-T half duplex mode
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((f8-b1-56), 24,  1)  ((f8-b1-56), 23,  1)  ((f8-b1-56), 22,  1)  ((f8-b1-56), 21,  7)  ((00-80-c2),  7,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/15 has 1 neighbor
+  Total Frames Out: 27508
+  Total Frames In: 28425
+  Total Neighbor information Age outs: 1
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 142125
+  Total TLVs Discarded: 0
+  Next packet will be sent after 29 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  20:04:0f:4a:4f:c4
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  ethernet1/1/28
+    Remote Port Description:  LRT-Bidir
+    Local Port ID: hundredGigE 1/15
+    Locally assigned remote Neighbor Index: 18
+    Remote TTL:  120
+    Information valid for next 97 seconds
+    Time since last information change of this neighbor:  1w0d2h
+    Remote MTU:  9216
+    Remote System Name:  PB-R05-Dell-Z9264F
+    Remote Management Address (IPv4):  192.168.255.99
+    Remote Management Address (IPv6):  fe80::2204:fff:fe4a:4fc4
+    Remote System Desc:  Dell EMC Networking OS10 Enterprise. Copyright
+     (c) 1999-2020 by Dell Inc. All Rights Reserved. System Description: OS10
+     Enterprise. OS Version: 10.5.2.0P1. System Type: Z9264F-ON
+    Existing System Capabilities:  Repeater Bridge Router
+    Enabled System Capabilities:  Repeater Bridge Router
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 0
+      Auto-neg advertised capabilities:
+        1000BASE-T half duplex mode
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((f8-b1-56), 24,  1)  ((f8-b1-56), 23,  1)  ((f8-b1-56), 22,  1)  ((f8-b1-56), 21,  7)  ((00-80-c2),  7,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/16 has 1 neighbor
+  Total Frames Out: 27496
+  Total Frames In: 28375
+  Total Neighbor information Age outs: 1
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 141875
+  Total TLVs Discarded: 0
+  Next packet will be sent after 12 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  20:04:0f:4a:4f:c4
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  ethernet1/1/27
+    Remote Port Description:  LRT-Bidir
+    Local Port ID: hundredGigE 1/16
+    Locally assigned remote Neighbor Index: 2
+    Remote TTL:  120
+    Information valid for next 106 seconds
+    Time since last information change of this neighbor:  1w0d2h
+    Remote MTU:  9216
+    Remote System Name:  PB-R05-Dell-Z9264F
+    Remote Management Address (IPv4):  192.168.255.99
+    Remote Management Address (IPv6):  fe80::2204:fff:fe4a:4fc4
+    Remote System Desc:  Dell EMC Networking OS10 Enterprise. Copyright
+     (c) 1999-2020 by Dell Inc. All Rights Reserved. System Description: OS10
+     Enterprise. OS Version: 10.5.2.0P1. System Type: Z9264F-ON
+    Existing System Capabilities:  Repeater Bridge Router
+    Enabled System Capabilities:  Repeater Bridge Router
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 0
+      Auto-neg advertised capabilities:
+        1000BASE-T half duplex mode
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((f8-b1-56), 24,  1)  ((f8-b1-56), 23,  1)  ((f8-b1-56), 22,  1)  ((f8-b1-56), 21,  7)  ((00-80-c2),  7,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/17 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28413
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28413
+  Total TLVs Discarded: 0
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  44:4c:a8:55:2c:dd
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  Ethernet19/1
+    Local Port ID: hundredGigE 1/17
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 110 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote MTU:  9236
+    Remote System Name:  lrt-sdn-r02-arista-7060cx
+    Remote Management Address (IPv4):  198.32.43.51
+    Remote System Desc:  Arista Networks EOS version 4.21.8M running on an
+     Arista Networks DCS-7060CX-32S
+    Existing System Capabilities:  Bridge Router
+    Enabled System Capabilities:  Bridge Router
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/18 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28414
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 0
+  Total TLVs Discarded: 0
+  Next packet will be sent after 7 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  00:59:0e:5d:04:3a
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  sdn1
+    Remote Port Description:  sdn1
+    Local Port ID: hundredGigE 1/18
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 109 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  BUR0002
+    Remote System Desc:  freeRouter v22.9.28-cur, done by cs@nop.
+    Existing System Capabilities:  Bridge Router
+    Enabled System Capabilities:  Bridge Router
+    UnknownTLVList:
+    OrgUnknownTLVList:
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/19 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28413
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28413
+  Total TLVs Discarded: 0
+  Next packet will be sent after 7 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  44:4c:a8:55:2c:dd
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  Ethernet20/1
+    Local Port ID: hundredGigE 1/19
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 110 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote MTU:  9236
+    Remote System Name:  lrt-sdn-r02-arista-7060cx
+    Remote Management Address (IPv4):  198.32.43.51
+    Remote System Desc:  Arista Networks EOS version 4.21.8M running on an
+     Arista Networks DCS-7060CX-32S
+    Existing System Capabilities:  Bridge Router
+    Enabled System Capabilities:  Bridge Router
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/20 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28413
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 0
+  Total TLVs Discarded: 0
+  Next packet will be sent after 13 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  00:35:51:77:6a:36
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  sdn31
+    Remote Port Description:  sdn31
+    Local Port ID: hundredGigE 1/20
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 104 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  BUR0001
+    Remote System Desc:  freeRouter v22.9.28-cur, done by cs@nop.
+    Existing System Capabilities:  Bridge Router
+    Enabled System Capabilities:  Bridge Router
+    UnknownTLVList:
+    OrgUnknownTLVList:
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/21 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28417
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28417
+  Total TLVs Discarded: 0
+  Next packet will be sent after 19 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  b4:2e:99:ba:78:5d
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  24:8a:07:9c:00:ae
+    Remote Port Description:  enp129s0f0np0
+    Local Port ID: hundredGigE 1/21
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 114 seconds
+    Time since last information change of this neighbor:  03:32:06
+    Remote System Name:  k8s-gen4-07.ultralight.org
+    Remote Management Address (IPv4):  10.244.40.64
+    Remote Management Address (IPv6):  2605:d9c0:2:10::3:7
+    Remote System Desc:  Ubuntu 20.04.3 LTS Linux 5.15.0-70-generic
+     #77~20.04.1-Ubuntu SMP Wed Apr 5 09:38:34 UTC 2023 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Router
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 1
+      Auto-neg advertised capabilities:
+        1000BASE-X, -LX, -SX, -CX full duplex mode,
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/23 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28461
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28461
+  Total TLVs Discarded: 0
+  Next packet will be sent after 27 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  e4:1d:2d:fd:c4:d0
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  e4:1d:2d:fd:c4:dc
+    Remote Port Description:  mlx4p1s1
+    Local Port ID: hundredGigE 1/23
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 101 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  sdn-dtn-1-7.ultralight.org
+    Remote Management Address (IPv4):  172.16.1.33
+    Remote Management Address (IPv6):  2605:d9c0:2:10::2:17
+    Remote System Desc:  AlmaLinux 8.8 (Sapphire Caracal) Linux
+     6.3.9-1.el8.elrepo.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Jun 21 20:41:11 EDT
+     2023 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Bridge Router
+    Vlan Names(s):
+      Vlan ID:   43, Name: mlx4p1s1.43
+      Vlan ID:  100, Name: mulsense
+      Vlan ID:  101, Name: sensexrd1
+      Vlan ID:  102, Name: sensexrd2
+      Vlan ID:  103, Name: sensexrd3
+      Vlan ID: 3874, Name: vlan.3874
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 1
+      Auto-neg advertised capabilities:
+        1000BASE-X, -LX, -SX, -CX full duplex mode,
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/24 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28417
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28417
+  Total TLVs Discarded: 0
+  Next packet will be sent after 1 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  b4:2e:99:ba:78:5d
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  24:8a:07:9c:00:af
+    Remote Port Description:  enp129s0f1np1
+    Local Port ID: hundredGigE 1/24
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 114 seconds
+    Time since last information change of this neighbor:  03:32:06
+    Remote System Name:  k8s-gen4-07.ultralight.org
+    Remote Management Address (IPv4):  10.244.40.64
+    Remote Management Address (IPv6):  2605:d9c0:2:10::3:7
+    Remote System Desc:  Ubuntu 20.04.3 LTS Linux 5.15.0-70-generic
+     #77~20.04.1-Ubuntu SMP Wed Apr 5 09:38:34 UTC 2023 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Router
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 1
+      Auto-neg advertised capabilities:
+        1000BASE-X, -LX, -SX, -CX full duplex mode,
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/25 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28446
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28446
+  Total TLVs Discarded: 0
+  Next packet will be sent after 3 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  18:66:da:85:5e:74
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  24:8a:07:9c:02:b7
+    Remote Port Description:  mlx5p1s2
+    Local Port ID: hundredGigE 1/25
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 114 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  sandie-10.ultralight.org
+    Remote Management Address (IPv4):  172.16.1.102
+    Remote Management Address (IPv6):  fe80::1a66:daff:fe85:5e74
+    Remote System Desc:  CentOS Stream 8 Linux 6.3.9-1.el8.elrepo.x86_64 #1
+     SMP PREEMPT_DYNAMIC Wed Jun 21 20:41:11 EDT 2023 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Bridge Router
+    Vlan Names(s):
+      Vlan ID:   43, Name: mlx5p1s2.43
+      Vlan ID:  100, Name: mulsense
+      Vlan ID:  101, Name: sensexrd1
+      Vlan ID:  102, Name: sensexrd2
+      Vlan ID:  103, Name: sensexrd3
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 1
+      Auto-neg advertised capabilities:
+        1000BASE-X, -LX, -SX, -CX full duplex mode,
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Fo 1/26/1 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 27342
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 0
+  Total TLVs Discarded: 0
+  Next packet will be sent after 5 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  00:01:e8:d7:72:f9
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  fortyGigE 0/48
+    Local Port ID: fortyGigE 1/26/1
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 118 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote MTU:  12000
+    Remote System Name:  lrt-sdn-r02-dell-s4810
+    Remote System Desc:  Dell Real Time Operating System Software. Dell
+     Operating System Version: 2.0. Dell Application Software Version:
+     9.11(2.0P0) Copyright (c) 1999-2017Dell Inc. All Rights Reserved.Build
+     Time: Thu Apr 27 07:46:15 2017
+    Existing System Capabilities:  Repeater Bridge Router
+    Enabled System Capabilities:  Repeater Bridge Router
+    Port and Protocol Vlan ID: 16, Capability: Supported, Status: Enabled
+    Port and Protocol Vlan ID: 43, Capability: Supported, Status: Enabled
+    UnknownTLVList:
+    OrgUnknownTLVList:
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/27 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28470
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28470
+  Total TLVs Discarded: 0
+  Next packet will be sent after 12 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  24:8a:07:9c:02:bf
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  24:8a:07:9c:02:be
+    Remote Port Description:  mlx5p1s1
+    Local Port ID: hundredGigE 1/27
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 111 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  sdn-dtn-2-11.ultralight.org
+    Remote Management Address (IPv4):  172.16.1.39
+    Remote Management Address (IPv6):  2605:d9c0:2:10::2:211
+    Remote System Desc:  AlmaLinux 8.8 (Sapphire Caracal) Linux
+     6.3.9-1.el8.elrepo.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Jun 21 20:41:11 EDT
+     2023 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Bridge Router
+    Vlan Names(s):
+      Vlan ID:   43, Name: mlx5p1s1.43
+      Vlan ID:  100, Name: mulsense
+      Vlan ID:  101, Name: sensexrd1
+      Vlan ID:  102, Name: sensexrd2
+      Vlan ID:  103, Name: sensexrd3
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 1
+      Auto-neg advertised capabilities:
+        1000BASE-X, -LX, -SX, -CX full duplex mode,
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Fo 1/29/1 has 1 neighbor
+  Total Frames Out: 27529
+  Total Frames In: 29072
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 29071
+  Total TLVs Discarded: 0
+  Next packet will be sent after 13 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  00:25:90:7f:ff:3e
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  00:02:c9:21:4b:11
+    Remote Port Description:  mlx3p1s1
+    Local Port ID: fortyGigE 1/29/1
+    Locally assigned remote Neighbor Index: 3
+    Remote TTL:  120
+    Information valid for next 108 seconds
+    Time since last information change of this neighbor:  1w2d4h
+    Remote System Name:  sdn-dtn-2-09.ultralight.org
+    Remote Management Address (IPv4):  198.32.43.17
+    Remote Management Address (IPv6):  2605:d9c0:2:10::2:209
+    Remote System Desc:  AlmaLinux 8.7 (Stone Smilodon) Linux
+     6.1.8-1.el8.elrepo.x86_64 #1 SMP PREEMPT_DYNAMIC Mon Jan 23 13:05:22 EST
+     2023 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Bridge Router
+    Vlan Names(s):
+      Vlan ID:   43, Name: mlx3p1s1.43
+      Vlan ID:  100, Name: mulsense
+      Vlan ID:  101, Name: sensexrd1
+      Vlan ID:  102, Name: sensexrd2
+      Vlan ID:  103, Name: sensexrd3
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 0
+      Auto-neg advertised capabilities:
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Fo 1/30/1 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28444
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28444
+  Total TLVs Discarded: 0
+  Next packet will be sent after 23 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  0c:c4:7a:fb:47:04
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  00:02:c9:a0:c4:e0
+    Remote Port Description:  mlx3p1s1
+    Local Port ID: fortyGigE 1/30/1
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 97 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  sandie-3.ultralight.org
+    Remote Management Address (IPv4):  172.16.1.36
+    Remote Management Address (IPv6):  2605:d9c0:2:10::1:3
+    Remote System Desc:  CentOS Stream 8 Linux 6.3.9-1.el8.elrepo.x86_64 #1
+     SMP PREEMPT_DYNAMIC Wed Jun 21 20:41:11 EDT 2023 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Bridge Router
+    Vlan Names(s):
+      Vlan ID:   43, Name: mlx3p1s1.43
+      Vlan ID:  100, Name: mulsense
+      Vlan ID:  101, Name: sensexrd1
+      Vlan ID:  102, Name: sensexrd2
+      Vlan ID:  103, Name: sensexrd3
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 0
+      Auto-neg advertised capabilities:
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/31 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 31087
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 31087
+  Total TLVs Discarded: 0
+  Next packet will be sent after 28 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  0c:c4:7a:68:5f:70
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  24:8a:07:9c:02:1e
+    Remote Port Description:  mlx5p1s1
+    Local Port ID: hundredGigE 1/31
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 119 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  sdn-dtn-2-10.ultralight.org
+    Remote Management Address (IPv4):  172.16.1.40
+    Remote Management Address (IPv6):  2605:d9c0:2:10::2:210
+    Remote System Desc:  AlmaLinux 8.8 (Sapphire Caracal) Linux
+     5.18.7-1.el8.elrepo.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Jun 24 09:32:12 EDT
+     2022 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Bridge Router
+    Vlan Names(s):
+      Vlan ID:   43, Name: mlx5p1s1.43
+      Vlan ID:  100, Name: mulsense
+      Vlan ID:  101, Name: sensexrd1
+      Vlan ID:  102, Name: sensexrd2
+      Vlan ID:  103, Name: sensexrd3
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 1
+      Auto-neg advertised capabilities:
+        1000BASE-X, -LX, -SX, -CX full duplex mode,
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Hu 1/32 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 28413
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 28413
+  Total TLVs Discarded: 0
+  Next packet will be sent after 2 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  3c:ec:ef:1c:8f:fe
+    Remote Port Subtype:  Mac address (3)
+    Remote Port ID:  ec:0d:9a:c1:ba:60
+    Remote Port Description:  enp129s0f0np0
+    Local Port ID: hundredGigE 1/32
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 115 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote System Name:  sandie-7.ultralight.org
+    Remote Management Address (IPv4):  198.32.43.11
+    Remote Management Address (IPv6):  2605:d9c0:2:10::1:7
+    Remote System Desc:  CentOS Stream 8 Linux 5.17.2-1.el8.elrepo.x86_64
+     #1 SMP PREEMPT Wed Apr 6 16:50:19 EDT 2022 x86_64
+    Existing System Capabilities:  Bridge WLAN Access Point Router Station only
+    Enabled System Capabilities:  Bridge Router
+    MAC PHY Configuration:
+      Auto-neg supported: 1
+      Auto-neg enabled: 1
+      Auto-neg advertised capabilities:
+        1000BASE-X, -LX, -SX, -CX full duplex mode,
+        PAUSE for full-duplex links,
+        other or unknown
+      Operational MAU type:
+        unknown
+    UnknownTLVList:
+    OrgUnknownTLVList:
+          ((00-12-0f),  3,  5)
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Te 1/33 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 25104
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 0
+  Total TLVs Discarded: 0
+  Next packet will be sent after 3 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  00:01:e8:96:1c:19
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  TenGigabitEthernet 0/51
+    Local Port ID: TenGigabitEthernet 1/33
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 101 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote MTU:  9252
+    Remote System Name:  LRT-R02-DELL-S60
+    Remote System Desc:  Dell Force10 Networks Real Time Operating System
+     Software. Dell Force10 Operating System Version: 1.0. Dell Force10
+     Application Software Version: 8.3.3.9. Copyright (c) 1999-2012 by Dell
+     Inc. All Rights Reserved.Build Time: Mon Apr 22 00:00:20 PDT 2013
+    Existing System Capabilities:  Repeater Bridge Router
+    Enabled System Capabilities:  Repeater Bridge Router
+    Port and Protocol Vlan ID: 0, Capability: Not Supported, Status: Not Enabled
+    UnknownTLVList:
+    OrgUnknownTLVList:
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Te 1/34 has 1 neighbor
+  Total Frames Out: 27530
+  Total Frames In: 25191
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 0
+  Total TLVs Discarded: 0
+  Next packet will be sent after 4 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  00:01:e8:96:13:4f
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  TenGigabitEthernet 0/51
+    Local Port ID: TenGigabitEthernet 1/34
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 95 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote MTU:  9252
+    Remote System Name:  LRT-R01-DELL-S60
+    Remote System Desc:  Dell Force10 Networks Real Time Operating System
+     Software. Dell Force10 Operating System Version: 1.0. Dell Force10
+     Application Software Version: 8.3.3.8. Copyright (c) 1999-2012 by Dell
+     Inc. All Rights Reserved.Build Time: Tue Nov 27 23:31:04 2012
+    Existing System Capabilities:  Repeater Bridge Router
+    Enabled System Capabilities:  Repeater Bridge Router
+    Port and Protocol Vlan ID: 0, Capability: Not Supported, Status: Not Enabled
+    UnknownTLVList:
+    OrgUnknownTLVList:
+   ---------------------------------------------------------------------------
+
+========================================================================
+ Local Interface Ma 1/1 has 1 neighbor
+  Total Frames Out: 27529
+  Total Frames In: 25103
+  Total Neighbor information Age outs: 0
+  Total Multiple Neighbors Detected: 0
+  Total Frames Discarded: 0
+  Total In Error Frames: 0
+  Total Unrecognized TLVs: 0
+  Total TLVs Discarded: 0
+  Next packet will be sent after 22 seconds
+  The neighbors are given below:
+  -----------------------------------------------------------------------
+
+    Remote Chassis ID Subtype: Mac address (4)
+    Remote Chassis ID:  00:01:e8:96:1c:19
+    Remote Port Subtype:  Interface name (5)
+    Remote Port ID:  GigabitEthernet 0/33
+    Local Port ID: ManagementEthernet 1/1
+    Locally assigned remote Neighbor Index: 1
+    Remote TTL:  120
+    Information valid for next 97 seconds
+    Time since last information change of this neighbor:  1w2d20h
+    Remote MTU:  9252
+    Remote System Name:  LRT-R02-DELL-S60
+    Remote System Desc:  Dell Force10 Networks Real Time Operating System
+     Software. Dell Force10 Operating System Version: 1.0. Dell Force10
+     Application Software Version: 8.3.3.9. Copyright (c) 1999-2012 by Dell
+     Inc. All Rights Reserved.Build Time: Mon Apr 22 00:00:20 PDT 2013
+    Existing System Capabilities:  Repeater Bridge Router
+    Enabled System Capabilities:  Repeater Bridge Router
+    Remote Port Vlan ID:  16
+    Port and Protocol Vlan ID: 6, Capability: Supported, Status: Enabled
+    Port and Protocol Vlan ID: 16, Capability: Supported, Status: Enabled
+    Port and Protocol Vlan ID: 43, Capability: Supported, Status: Enabled
+    UnknownTLVList:
+    OrgUnknownTLVList:
+   ---------------------------------------------------------------------------
+

@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible-core/2.15/dev_guide/testing/sanity/pep8.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test pep8` [[explain](https://docs.ansible.com/ansible-core/2.15/dev_guide/testing/sanity/pep8.html)] failed with 5 errors:", 
+            "output": "plugins/module_utils/network/dellos10.py:218:26: E127: continuation line over-indented for visual indent\nplugins/module_utils/network/dellos10.py:223:26: E127: continuation line over-indented for visual indent\nplugins/module_utils/network/dellos10.py:227:74: E226: missing whitespace around arithmetic operator\nplugins/module_utils/network/dellos10.py:257:9: E265: block comment should start with '# '\nplugins/module_utils/network/dellos10.py:271:19: W292: no newline at end of file"
+        }
+    ], 
+    "verified": false
+}

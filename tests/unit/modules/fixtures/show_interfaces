@@ -1,0 +1,1692 @@
+hundredGigE 1/1 is up, line protocol is up
+Port is part of Port-channel 102
+Description: 'Port-channel 102'
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP28 type is 100GBASE-SR4
+    AutoNegotiation is OFF
+    Forward Error Correction(FEC) configured is OFF
+    FEC status is OFF
+    Wavelength is 850nm
+    QSFP28 receive power reading is -0.2669dBm
+    QSFP28 transmit power reading is 0.1376dBm
+Interface index is 2097166
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     773350033 packets, 1714550024524 bytes
+     112447752 64-byte pkts, 77197613 over 64-byte pkts, 155995908 over 127-byte pkts
+     155449648 over 255-byte pkts, 37369975 over 511-byte pkts, 14120310 over 1023-byte pkts
+     27881 Multicasts, 701 Broadcasts, 773321451 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     1042024502 packets, 1318762724029 bytes, 0 underruns
+     58794212 64-byte pkts, 731658220 over 64-byte pkts, 42854469 over 127-byte pkts
+     7258384 over 255-byte pkts, 20527922 over 511-byte pkts, 7596383 over 1023-byte pkts
+     4207460 Multicasts, 4995066 Broadcasts, 1032821976 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 13.00 Mbits/sec,        736 packets/sec, 0.01% of line-rate
+     Output 01.00 Mbits/sec,        976 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/2 is up, line protocol is up
+Port is part of Port-channel 102
+Description: 'Port-channel 102'
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP28 type is 100GBASE-SR4
+    AutoNegotiation is OFF
+    Forward Error Correction(FEC) configured is OFF
+    FEC status is OFF
+    Wavelength is 850nm
+    QSFP28 receive power reading is -0.5012dBm
+    QSFP28 transmit power reading is 0.7922dBm
+Interface index is 2097678
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     1084434557 packets, 1294045486894 bytes
+     102636196 64-byte pkts, 74445033 over 64-byte pkts, 333673200 over 127-byte pkts
+     295588670 over 255-byte pkts, 78200610 over 511-byte pkts, 30875317 over 1023-byte pkts
+     30013 Multicasts, 198 Broadcasts, 1084404346 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     852536230 packets, 1317656447476 bytes, 0 underruns
+     54580272 64-byte pkts, 548227292 over 64-byte pkts, 40666085 over 127-byte pkts
+     6983712 over 255-byte pkts, 20908752 over 511-byte pkts, 5559446 over 1023-byte pkts
+     1002872 Multicasts, 86129 Broadcasts, 851447229 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 16.00 Mbits/sec,       1509 packets/sec, 0.02% of line-rate
+     Output 01.00 Mbits/sec,        935 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/3 is up, line protocol is up
+Description: Wedge-R02-port-5
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+    Forward Error Correction(FEC) configured is cl91 (RS-FEC)
+    FEC status is ON
+Interface index is 2098190
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     978467 packets, 95990786 bytes
+     98847 64-byte pkts, 794495 over 64-byte pkts, 85125 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     879620 Multicasts, 23645 Broadcasts, 75202 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     29 FEC bit errors, 8 FEC uncorrected code words
+Output Statistics:
+     6225369 packets, 448457157 bytes, 0 underruns
+     466803 64-byte pkts, 5729645 over 64-byte pkts, 635 over 127-byte pkts
+     28159 over 255-byte pkts, 67 over 511-byte pkts, 37 over 1023-byte pkts
+     1106361 Multicasts, 4949133 Broadcasts, 169875 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          1 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          6 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/4 is up, line protocol is up
+Description: SN3700-R02-port-5
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+    Forward Error Correction(FEC) configured is cl91 (RS-FEC)
+    FEC status is ON
+Interface index is 2098702
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     28376 packets, 7065394 bytes
+     0 64-byte pkts, 0 over 64-byte pkts, 28376 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     28376 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     6060763 packets, 437369439 bytes, 0 underruns
+     342190 64-byte pkts, 5690907 over 64-byte pkts, 96 over 127-byte pkts
+     27533 over 255-byte pkts, 14 over 511-byte pkts, 0 over 1023-byte pkts
+     1106399 Multicasts, 4953923 Broadcasts, 441 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          6 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/5 is up, line protocol is up
+Description: PRP node
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP28 type is 100GBASE-CR4-2M
+    AutoNegotiation is ON
+    Forward Error Correction(FEC) configured is default
+    FEC status is ON
+    Wavelength is 0nm
+Interface index is 2099214
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     2878473731 packets, 11220781686359 bytes
+     152745 64-byte pkts, 1405633516 over 64-byte pkts, 40484262 over 127-byte pkts
+     110498000 over 255-byte pkts, 91449150 over 511-byte pkts, 6370442 over 1023-byte pkts
+     77 Multicasts, 6 Broadcasts, 2878473369 Unicasts
+     0 runts, 0 giants, 279 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     6758670181 packets, 48476723237625 bytes, 0 underruns
+     5529250 64-byte pkts, 987816921 over 64-byte pkts, 31874178 over 127-byte pkts
+     7859839 over 255-byte pkts, 51817913 over 511-byte pkts, 157316369 over 1023-byte pkts
+     1106622 Multicasts, 4955089 Broadcasts, 6752608470 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,        343 packets/sec, 0.00% of line-rate
+     Output 17.00 Mbits/sec,        604 packets/sec, 0.02% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/6 is up, line protocol is up
+Description: sandie-4
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP28 type is 100GBASE-CR4-3M
+    AutoNegotiation is ON
+    Forward Error Correction(FEC) configured is default
+    FEC status is ON
+    Wavelength is 77nm
+Interface index is 2099726
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     7350930 packets, 18023487616 bytes
+     1180894 64-byte pkts, 1521483 over 64-byte pkts, 283471 over 127-byte pkts
+     1585745 over 255-byte pkts, 288425 over 511-byte pkts, 258808 over 1023-byte pkts
+     28906 Multicasts, 38 Broadcasts, 7321986 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     16 FEC bit errors, 6 FEC uncorrected code words
+Output Statistics:
+     15992155 packets, 6526087531 bytes, 0 underruns
+     1622630 64-byte pkts, 9122399 over 64-byte pkts, 266458 over 127-byte pkts
+     748619 over 255-byte pkts, 1072001 over 511-byte pkts, 633010 over 1023-byte pkts
+     3410641 Multicasts, 5080284 Broadcasts, 7501230 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          6 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,         13 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w0d2h
+
+
+hundredGigE 1/7 is down, line protocol is down
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Pluggable media not present
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+Interface index is 2100238
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     0 packets, 0 bytes
+     0 64-byte pkts, 0 over 64-byte pkts, 0 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     0 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     0 packets, 0 bytes, 0 underruns
+     0 64-byte pkts, 0 over 64-byte pkts, 0 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     0 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/8 is up, line protocol is down
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Pluggable media not present
+    Forward Error Correction(FEC) configured is cl91 (RS-FEC)
+    FEC status is OFF
+Interface index is 2100750
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     0 packets, 0 bytes
+     0 64-byte pkts, 0 over 64-byte pkts, 0 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     0 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     0 packets, 0 bytes, 0 underruns
+     0 64-byte pkts, 0 over 64-byte pkts, 0 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     0 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/9 is up, line protocol is up
+Port is part of Port-channel 103
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Pluggable media present, QSFP28 type is 100GBASE-CWDM4
+    AutoNegotiation is OFF
+    Forward Error Correction(FEC) configured is cl91 (RS-FEC)
+    FEC status is ON
+    Wavelength is 1310nm
+    QSFP28 receive power reading is -2.7466dBm
+    QSFP28 transmit power reading is -0.4716dBm
+Interface index is 2101262
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     9411563739 packets, 45171542868137 bytes
+     60888100 64-byte pkts, 3075569218 over 64-byte pkts, 320195532 over 127-byte pkts
+     151132578 over 255-byte pkts, 87450975 over 511-byte pkts, 88234884 over 1023-byte pkts
+     6441123 Multicasts, 143 Broadcasts, 9405112487 Unicasts
+     0 runts, 0 giants, 9986 throttles
+     0 CRC, 0 overrun, 0 discarded
+     406 FEC bit errors, 3 FEC uncorrected code words
+Output Statistics:
+     12592706232 packets, 55656123931535 bytes, 0 underruns
+     115848267 64-byte pkts, 2039130475 over 64-byte pkts, 340983630 over 127-byte pkts
+     224473483 over 255-byte pkts, 69865270 over 511-byte pkts, 269744581 over 1023-byte pkts
+     39850 Multicasts, 39 Broadcasts, 12592666343 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 78.00 Mbits/sec,       5075 packets/sec, 0.08% of line-rate
+     Output 242.00 Mbits/sec,       5601 packets/sec, 0.24% of line-rate
+Time since last interface status change: 1w0d2h
+
+
+hundredGigE 1/10 is up, line protocol is up
+Description: sandie-1
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP28 type is 100GBASE-CR4-3M
+    AutoNegotiation is ON
+    Forward Error Correction(FEC) configured is default
+    FEC status is ON
+    Wavelength is 77nm
+Interface index is 2101774
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     788302276 packets, 1347544636681 bytes
+     53710008 64-byte pkts, 268828887 over 64-byte pkts, 93917218 over 127-byte pkts
+     74934201 over 255-byte pkts, 43912413 over 511-byte pkts, 24699937 over 1023-byte pkts
+     36681 Multicasts, 242 Broadcasts, 788265184 Unicasts
+     0 runts, 0 giants, 169 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     888051116 packets, 1929194048357 bytes, 0 underruns
+     68854120 64-byte pkts, 351575030 over 64-byte pkts, 113495695 over 127-byte pkts
+     31231657 over 255-byte pkts, 37494429 over 511-byte pkts, 16201041 over 1023-byte pkts
+     5621324 Multicasts, 5080712 Broadcasts, 877349080 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 12.00 Mbits/sec,        946 packets/sec, 0.01% of line-rate
+     Output 08.00 Mbits/sec,        890 packets/sec, 0.01% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/11 is up, line protocol is up
+Description: sandie-5
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+Interface index is 2102286
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     818047457 packets, 2150530077535 bytes
+     43847432 64-byte pkts, 219445531 over 64-byte pkts, 129227249 over 127-byte pkts
+     60992424 over 255-byte pkts, 24954202 over 511-byte pkts, 7300203 over 1023-byte pkts
+     88871 Multicasts, 60734 Broadcasts, 817882878 Unicasts
+     0 runts, 0 giants, 14974 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     845005590 packets, 1798462106398 bytes, 0 underruns
+     27995929 64-byte pkts, 390934409 over 64-byte pkts, 90228452 over 127-byte pkts
+     39074829 over 255-byte pkts, 23054078 over 511-byte pkts, 11249069 over 1023-byte pkts
+     2820518 Multicasts, 4893423 Broadcasts, 837291650 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 14.00 Mbits/sec,        855 packets/sec, 0.01% of line-rate
+     Output 08.00 Mbits/sec,        842 packets/sec, 0.01% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/12 is up, line protocol is up
+Description: sandie-6
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+Interface index is 2102798
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     1101087708 packets, 1577410334393 bytes
+     87950650 64-byte pkts, 610405404 over 64-byte pkts, 61967704 over 127-byte pkts
+     71794219 over 255-byte pkts, 19635195 over 511-byte pkts, 7368208 over 1023-byte pkts
+     29262 Multicasts, 138881 Broadcasts, 1100909397 Unicasts
+     0 runts, 0 giants, 10168 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     1624216580 packets, 9126448769158 bytes, 0 underruns
+     51643362 64-byte pkts, 212125817 over 64-byte pkts, 51149707 over 127-byte pkts
+     16732312 over 255-byte pkts, 14159479 over 511-byte pkts, 3640556 over 1023-byte pkts
+     2880693 Multicasts, 4815253 Broadcasts, 1616520634 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 09.00 Mbits/sec,       1411 packets/sec, 0.01% of line-rate
+     Output 74.00 Mbits/sec,       1907 packets/sec, 0.07% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/13 is up, line protocol is up
+Port is part of Port-channel 103
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Pluggable media present, Media type is unknown
+    AutoNegotiation is OFF
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+    Wavelength is 1271nm
+Interface index is 2103310
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     9900389224 packets, 47790138972324 bytes
+     72695979 64-byte pkts, 3233449611 over 64-byte pkts, 327850927 over 127-byte pkts
+     153139227 over 255-byte pkts, 101696643 over 511-byte pkts, 117794762 over 1023-byte pkts
+     8061248 Multicasts, 360 Broadcasts, 9892285195 Unicasts
+     0 runts, 0 giants, 42421 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     12440655741 packets, 56049688481206 bytes, 0 underruns
+     102245437 64-byte pkts, 1952807312 over 64-byte pkts, 327769966 over 127-byte pkts
+     216113585 over 255-byte pkts, 66396060 over 511-byte pkts, 239711995 over 1023-byte pkts
+     27497 Multicasts, 0 Broadcasts, 12440628244 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 155.00 Mbits/sec,       7772 packets/sec, 0.16% of line-rate
+     Output 305.00 Mbits/sec,       6876 packets/sec, 0.31% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/14 is up, line protocol is up
+Port is part of Port-channel 103
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Pluggable media present, Media type is unknown
+    AutoNegotiation is OFF
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+    Wavelength is 1271nm
+Interface index is 2103822
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     9666615994 packets, 46294395226900 bytes
+     70821663 64-byte pkts, 3192705561 over 64-byte pkts, 343397821 over 127-byte pkts
+     156228050 over 255-byte pkts, 90705959 over 511-byte pkts, 97310994 over 1023-byte pkts
+     4702373 Multicasts, 121513 Broadcasts, 9661761659 Unicasts
+     0 runts, 0 giants, 30449 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     12653768206 packets, 58629213757202 bytes, 0 underruns
+     111366405 64-byte pkts, 1791123541 over 64-byte pkts, 341574142 over 127-byte pkts
+     232486371 over 255-byte pkts, 67094619 over 511-byte pkts, 258005766 over 1023-byte pkts
+     27503 Multicasts, 0 Broadcasts, 12653740703 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 269.00 Mbits/sec,       6299 packets/sec, 0.27% of line-rate
+     Output 188.00 Mbits/sec,       7263 packets/sec, 0.19% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/15 is up, line protocol is up
+Port is part of Port-channel 103
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Pluggable media present, Media type is unknown
+    AutoNegotiation is OFF
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+    Wavelength is 1271nm
+Interface index is 2104334
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     9596148185 packets, 47120450021387 bytes
+     63199137 64-byte pkts, 3057842837 over 64-byte pkts, 323252435 over 127-byte pkts
+     145611165 over 255-byte pkts, 97316864 over 511-byte pkts, 85053605 over 1023-byte pkts
+     4681805 Multicasts, 1516 Broadcasts, 9591464353 Unicasts
+     38 runts, 0 giants, 0 throttles
+     511 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     11945790730 packets, 51594020812855 bytes, 0 underruns
+     93324153 64-byte pkts, 1901818807 over 64-byte pkts, 318649238 over 127-byte pkts
+     199130850 over 255-byte pkts, 62094991 over 511-byte pkts, 246053033 over 1023-byte pkts
+     27471 Multicasts, 0 Broadcasts, 11945763259 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 116.00 Mbits/sec,       5099 packets/sec, 0.12% of line-rate
+     Output 146.00 Mbits/sec,       4702 packets/sec, 0.15% of line-rate
+Time since last interface status change: 1w0d2h
+
+
+hundredGigE 1/16 is up, line protocol is up
+Port is part of Port-channel 103
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Pluggable media present, Media type is unknown
+    AutoNegotiation is OFF
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+    Wavelength is 1271nm
+Interface index is 2104846
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     9693937416 packets, 47579191869438 bytes
+     72694493 64-byte pkts, 3083668337 over 64-byte pkts, 330850193 over 127-byte pkts
+     150729968 over 255-byte pkts, 94756218 over 511-byte pkts, 77307875 over 1023-byte pkts
+     4685690 Multicasts, 1097 Broadcasts, 9689250629 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     11914236643 packets, 52637779436050 bytes, 0 underruns
+     102232374 64-byte pkts, 1793047159 over 64-byte pkts, 339112703 over 127-byte pkts
+     225959128 over 255-byte pkts, 64198301 over 511-byte pkts, 247008743 over 1023-byte pkts
+     27686 Multicasts, 0 Broadcasts, 11914208957 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 147.00 Mbits/sec,       4579 packets/sec, 0.15% of line-rate
+     Output 185.00 Mbits/sec,       4898 packets/sec, 0.19% of line-rate
+Time since last interface status change: 1w0d2h
+
+
+hundredGigE 1/17 is up, line protocol is up
+Port is part of Port-channel 104
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP28 type is 100GBASE-CR4-2M
+    AutoNegotiation is ON
+    Forward Error Correction(FEC) configured is default
+    FEC status is ON
+    Wavelength is 38nm
+Interface index is 2105358
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     665745 packets, 119714742 bytes
+     7514 64-byte pkts, 337730 over 64-byte pkts, 51299 over 127-byte pkts
+     268846 over 255-byte pkts, 355 over 511-byte pkts, 1 over 1023-byte pkts
+     28375 Multicasts, 0 Broadcasts, 637370 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     6621584 packets, 490284771 bytes, 0 underruns
+     321636 64-byte pkts, 6243223 over 64-byte pkts, 22965 over 127-byte pkts
+     33633 over 255-byte pkts, 27 over 511-byte pkts, 83 over 1023-byte pkts
+     1038985 Multicasts, 4893276 Broadcasts, 689323 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          1 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          7 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/18 is up, line protocol is up
+Description: Wedge-XXX
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+Interface index is 2105870
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     1756587 packets, 223788510 bytes
+     0 64-byte pkts, 54387 over 64-byte pkts, 1702200 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     1751858 Multicasts, 4729 Broadcasts, 0 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     27493 packets, 9182662 bytes, 0 underruns
+     0 64-byte pkts, 0 over 64-byte pkts, 0 over 127-byte pkts
+     27493 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     27493 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          2 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/19 is up, line protocol is up
+Port is part of Port-channel 104
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP28 type is 100GBASE-CR4-2M
+    AutoNegotiation is ON
+    Forward Error Correction(FEC) configured is default
+    FEC status is ON
+    Wavelength is 38nm
+Interface index is 2106382
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     666270 packets, 119691093 bytes
+     8466 64-byte pkts, 335872 over 64-byte pkts, 51152 over 127-byte pkts
+     270368 over 255-byte pkts, 372 over 511-byte pkts, 0 over 1023-byte pkts
+     28375 Multicasts, 0 Broadcasts, 637895 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     836781 packets, 82009364 bytes, 0 underruns
+     101782 64-byte pkts, 678390 over 64-byte pkts, 23118 over 127-byte pkts
+     33383 over 255-byte pkts, 23 over 511-byte pkts, 69 over 1023-byte pkts
+     94928 Multicasts, 60786 Broadcasts, 681067 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          1 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          1 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/20 is up, line protocol is up
+Description: Wedge-XXX
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+Interface index is 2106894
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     54387 packets, 5963623 bytes
+     0 64-byte pkts, 54387 over 64-byte pkts, 0 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     49657 Multicasts, 4730 Broadcasts, 0 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     27493 packets, 9182662 bytes, 0 underruns
+     0 64-byte pkts, 0 over 64-byte pkts, 0 over 127-byte pkts
+     27493 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     27493 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/21 is up, line protocol is up
+Description: k8s node
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+    Forward Error Correction(FEC) configured is cl91 (RS-FEC)
+    FEC status is ON
+Interface index is 2107406
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     28627 packets, 7254976 bytes
+     0 64-byte pkts, 247 over 64-byte pkts, 28380 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     28627 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     6060763 packets, 437396932 bytes, 0 underruns
+     342190 64-byte pkts, 5690907 over 64-byte pkts, 96 over 127-byte pkts
+     27533 over 255-byte pkts, 14 over 511-byte pkts, 0 over 1023-byte pkts
+     1106399 Multicasts, 4953923 Broadcasts, 441 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          6 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/22 is up, line protocol is up
+Description: k8s-ceph-01
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP28 type is 100GBASE-CR4-2M
+    AutoNegotiation is ON
+    Forward Error Correction(FEC) configured is default
+    FEC status is ON
+    Wavelength is 51nm
+Interface index is 2107918
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     57613748866 packets, 273444658168827 bytes
+     62577915 64-byte pkts, 6921983192 over 64-byte pkts, 1421855512 over 127-byte pkts
+     685593122 over 255-byte pkts, 174068841 over 511-byte pkts, 1251727310 over 1023-byte pkts
+     2634 Multicasts, 60 Broadcasts, 57613436849 Unicasts
+     0 runts, 0 giants, 309323 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     38101901800 packets, 176179320153102 bytes, 0 underruns
+     112312715 64-byte pkts, 13573616240 over 64-byte pkts, 1405732262 over 127-byte pkts
+     689488114 over 255-byte pkts, 300936130 over 511-byte pkts, 396636865 over 1023-byte pkts
+     3408515 Multicasts, 5080826 Broadcasts, 38093412459 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 1071.00 Mbits/sec,      26954 packets/sec, 1.08% of line-rate
+     Output 533.00 Mbits/sec,      23551 packets/sec, 0.54% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/23 is up, line protocol is up
+Description: sdn-dtn-1-7
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP28 type is 100GBASE-CR4-3M
+    AutoNegotiation is ON
+    Forward Error Correction(FEC) configured is default
+    FEC status is ON
+    Wavelength is 77nm
+Interface index is 2108430
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     750036007 packets, 2744603105742 bytes
+     36379027 64-byte pkts, 145209670 over 64-byte pkts, 75019416 over 127-byte pkts
+     71274697 over 255-byte pkts, 21586324 over 511-byte pkts, 9163570 over 1023-byte pkts
+     28966 Multicasts, 223 Broadcasts, 750005916 Unicasts
+     0 runts, 0 giants, 902 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     963637372 packets, 2027258032448 bytes, 0 underruns
+     23660152 64-byte pkts, 284399412 over 64-byte pkts, 55294378 over 127-byte pkts
+     40949241 over 255-byte pkts, 9319242 over 511-byte pkts, 1010810 over 1023-byte pkts
+     5608291 Multicasts, 5080762 Broadcasts, 952948319 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 17.00 Mbits/sec,        750 packets/sec, 0.02% of line-rate
+     Output 10.00 Mbits/sec,        679 packets/sec, 0.01% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/24 is up, line protocol is up
+Description: PRP AMD Node
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP28 type is 100GBASE-CR4-2M
+    AutoNegotiation is ON
+    Forward Error Correction(FEC) configured is default
+    FEC status is ON
+    Wavelength is 51nm
+Interface index is 2108942
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     2472162666 packets, 9663617957538 bytes
+     158570 64-byte pkts, 1235337590 over 64-byte pkts, 75368130 over 127-byte pkts
+     21031531 over 255-byte pkts, 67464477 over 511-byte pkts, 4252743 over 1023-byte pkts
+     31073 Multicasts, 12 Broadcasts, 2472069885 Unicasts
+     0 runts, 0 giants, 61696 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     3767879884 packets, 22800020299377 bytes, 0 underruns
+     5564568 64-byte pkts, 1054642342 over 64-byte pkts, 65759263 over 127-byte pkts
+     41322784 over 255-byte pkts, 37955750 over 511-byte pkts, 10154917 over 1023-byte pkts
+     1103930 Multicasts, 4955082 Broadcasts, 3761820872 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 21.00 Mbits/sec,        986 packets/sec, 0.02% of line-rate
+     Output 246.00 Mbits/sec,       3974 packets/sec, 0.25% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/25 is up, line protocol is up
+Description: sandie-10
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+Interface index is 2109454
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     316095313 packets, 506008911443 bytes
+     36096469 64-byte pkts, 22220280 over 64-byte pkts, 91883344 over 127-byte pkts
+     78416134 over 255-byte pkts, 20994037 over 511-byte pkts, 4625231 over 1023-byte pkts
+     28673 Multicasts, 175 Broadcasts, 316051824 Unicasts
+     0 runts, 0 giants, 14641 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     335470647 packets, 496750507061 bytes, 0 underruns
+     21393802 64-byte pkts, 226452716 over 64-byte pkts, 13794226 over 127-byte pkts
+     2576770 over 255-byte pkts, 6749956 over 511-byte pkts, 392792 over 1023-byte pkts
+     2880961 Multicasts, 4954979 Broadcasts, 327634707 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 04.00 Mbits/sec,        365 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,        318 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+fortyGigE 1/26/1 is up, line protocol is up
+Description: Dell S4810
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+Interface index is 2109957
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 40000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     27805390 packets, 36260972543 bytes
+     0 64-byte pkts, 4039365 over 64-byte pkts, 982433 over 127-byte pkts
+     1294159 over 255-byte pkts, 450945 over 511-byte pkts, 16356913 over 1023-byte pkts
+     29447 Multicasts, 47 Broadcasts, 27775896 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+Output Statistics:
+     36454691 packets, 37415454238 bytes, 0 underruns
+     514006 64-byte pkts, 11354799 over 64-byte pkts, 1009329 over 127-byte pkts
+     1095951 over 255-byte pkts, 1422758 over 511-byte pkts, 16376231 over 1023-byte pkts
+     3408798 Multicasts, 5080879 Broadcasts, 27965014 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          9 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,         17 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/27 is up, line protocol is up
+Description: sdn-dtn-2-11
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+Interface index is 2110478
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     421365809 packets, 738451796155 bytes
+     42076272 64-byte pkts, 70857906 over 64-byte pkts, 113861947 over 127-byte pkts
+     47232632 over 255-byte pkts, 28316603 over 511-byte pkts, 8384401 over 1023-byte pkts
+     28764 Multicasts, 168 Broadcasts, 421336853 Unicasts
+     0 runts, 0 giants, 24 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     699625281 packets, 614386521621 bytes, 0 underruns
+     25402545 64-byte pkts, 251683730 over 64-byte pkts, 55111589 over 127-byte pkts
+     18763735 over 255-byte pkts, 20799591 over 511-byte pkts, 7004772 over 1023-byte pkts
+     5185126 Multicasts, 5080770 Broadcasts, 689359385 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 07.00 Mbits/sec,        474 packets/sec, 0.01% of line-rate
+     Output 01.00 Mbits/sec,        437 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/28 is up, line protocol is down
+Description: R1-Arista-706-CX-32S
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Pluggable media not present
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+Interface index is 2110990
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     0 packets, 0 bytes
+     0 64-byte pkts, 0 over 64-byte pkts, 0 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     0 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     0 packets, 0 bytes, 0 underruns
+     0 64-byte pkts, 0 over 64-byte pkts, 0 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     0 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+fortyGigE 1/29/1 is up, line protocol is up
+Description: sdn-dtn-2-09
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+Interface index is 2111493
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 40000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     364307842 packets, 581338513496 bytes
+     33201265 64-byte pkts, 148164909 over 64-byte pkts, 45551252 over 127-byte pkts
+     31111667 over 255-byte pkts, 15382089 over 511-byte pkts, 7320378 over 1023-byte pkts
+     29413 Multicasts, 391 Broadcasts, 364275692 Unicasts
+     0 runts, 0 giants, 2346 throttles
+     0 CRC, 0 overrun, 0 discarded
+Output Statistics:
+     378541058 packets, 619352983694 bytes, 0 underruns
+     20023653 64-byte pkts, 143528731 over 64-byte pkts, 55950186 over 127-byte pkts
+     38275319 over 255-byte pkts, 24906448 over 511-byte pkts, 8108562 over 1023-byte pkts
+     5184094 Multicasts, 5078883 Broadcasts, 368278081 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 04.00 Mbits/sec,        269 packets/sec, 0.01% of line-rate
+     Output 00.00 Mbits/sec,        225 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d4h
+
+
+fortyGigE 1/30/1 is up, line protocol is up
+Description: sandie-3
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+Interface index is 2112005
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 40000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     241481115 packets, 504037998140 bytes
+     36240908 64-byte pkts, 27465460 over 64-byte pkts, 40409106 over 127-byte pkts
+     41547326 over 255-byte pkts, 18812908 over 511-byte pkts, 6662468 over 1023-byte pkts
+     28649 Multicasts, 184 Broadcasts, 241451906 Unicasts
+     0 runts, 0 giants, 376 throttles
+     0 CRC, 0 overrun, 0 discarded
+Output Statistics:
+     261475762 packets, 491708876680 bytes, 0 underruns
+     20686784 64-byte pkts, 148731172 over 64-byte pkts, 13882411 over 127-byte pkts
+     2976993 over 255-byte pkts, 8189796 over 511-byte pkts, 452902 over 1023-byte pkts
+     5185198 Multicasts, 5080860 Broadcasts, 251209704 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 04.00 Mbits/sec,        271 packets/sec, 0.01% of line-rate
+     Output 00.00 Mbits/sec,        228 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/31 is up, line protocol is up
+Description: sdn-dtn-2-10
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP type is 40GBASE-CR4
+    Forward Error Correction(FEC) configured is default
+    FEC status is OFF
+Interface index is 2112526
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     2200290204 packets, 1551051165306 bytes
+     48864653 64-byte pkts, 1852931290 over 64-byte pkts, 37164045 over 127-byte pkts
+     29211096 over 255-byte pkts, 4178845 over 511-byte pkts, 911468 over 1023-byte pkts
+     31620 Multicasts, 221 Broadcasts, 2200258364 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     2095451932 packets, 1599771594748 bytes, 0 underruns
+     24206221 64-byte pkts, 135581495 over 64-byte pkts, 719652338 over 127-byte pkts
+     546027715 over 255-byte pkts, 268468141 over 511-byte pkts, 103254970 over 1023-byte pkts
+     3410884 Multicasts, 5080796 Broadcasts, 2086960252 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 15.00 Mbits/sec,       2823 packets/sec, 0.02% of line-rate
+     Output 15.00 Mbits/sec,       2684 packets/sec, 0.02% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+hundredGigE 1/32 is up, line protocol is up
+Description: sandie-7
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, QSFP28 type is 100GBASE-CR4-2M
+    AutoNegotiation is ON
+    Forward Error Correction(FEC) configured is default
+    FEC status is ON
+    Wavelength is 51nm
+Interface index is 2113038
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     28374 packets, 7093500 bytes
+     0 64-byte pkts, 0 over 64-byte pkts, 28374 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     28374 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+     0 FEC bit errors, 0 FEC uncorrected code words
+Output Statistics:
+     8492140 packets, 1277915344 bytes, 0 underruns
+     342190 64-byte pkts, 6662801 over 64-byte pkts, 98 over 127-byte pkts
+     465556 over 255-byte pkts, 1021472 over 511-byte pkts, 0 over 1023-byte pkts
+     3410872 Multicasts, 5080780 Broadcasts, 488 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          8 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+TenGigabitEthernet 1/33 is up, line protocol is up
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Pluggable media present, SFP+ type is 10GBASE-SR
+    Medium is MultiRate, Wavelength is 850nm
+    SFP+ receive power reading is -2.0135dBm
+    SFP+ transmit power reading is -2.2709dBm
+Interface index is 2113540
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 10000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     113052838 packets, 56968387919 bytes
+     1274319 64-byte pkts, 71000005 over 64-byte pkts, 7732354 over 127-byte pkts
+     3659623 over 255-byte pkts, 1747523 over 511-byte pkts, 18493051 over 1023-byte pkts
+     941405 Multicasts, 61027 Broadcasts, 112050406 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+Output Statistics:
+     120324739 packets, 57809094273 bytes, 0 underruns
+     1742105 64-byte pkts, 82170599 over 64-byte pkts, 4301715 over 127-byte pkts
+     2050844 over 255-byte pkts, 1422528 over 511-byte pkts, 18659735 over 1023-byte pkts
+     2473345 Multicasts, 5019941 Broadcasts, 112831453 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,         97 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,        103 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+TenGigabitEthernet 1/34 is up, line protocol is up
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Non-qualified pluggable media present, SFP+ type is 10GBASE-CU2M
+    Medium is Twinax Copper
+Interface index is 2113668
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 10000 Mbit
+Flowcontrol rx off tx off
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Input Statistics:
+     714301872 packets, 848601896809 bytes
+     106561481 64-byte pkts, 226646289 over 64-byte pkts, 76773235 over 127-byte pkts
+     51086527 over 255-byte pkts, 55454861 over 511-byte pkts, 39528193 over 1023-byte pkts
+     950354 Multicasts, 203802 Broadcasts, 713147716 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+Output Statistics:
+     726802318 packets, 483798159907 bytes, 0 underruns
+     103429408 64-byte pkts, 487805438 over 64-byte pkts, 20000879 over 127-byte pkts
+     3774488 over 255-byte pkts, 6683818 over 511-byte pkts, 12576883 over 1023-byte pkts
+     2457406 Multicasts, 4877272 Broadcasts, 719467640 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 07.00 Mbits/sec,        867 packets/sec, 0.07% of line-rate
+     Output 04.00 Mbits/sec,        883 packets/sec, 0.04% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+ManagementEthernet 1/1 is up, line protocol is up
+Hardware is DellEMCEth, address is 4c:76:25:e8:44:c2
+    Current address is 4c:76:25:e8:44:c2
+Pluggable media not present
+Interface index is 9437185
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+Virtual-IP is not set
+Virtual-IP IPv6 address is not set
+MTU 1554 bytes, IP MTU 1500 bytes
+LineSpeed 1000 Mbit, Mode full duplex
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+    Input 5229670 packets, 59290673 bytes, 541652 multicast
+    Received 0 errors, 0 discarded
+    Output 27492 packets, 8550012 bytes, 0 multicast
+    Output 0 errors, 0 invalid protocol
+Time since last interface status change: 1w2d20h
+
+
+Port-channel 101 is down, line protocol is down
+Hardware address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1258342912
+Minimum number of links to bring Port-channel up is 1
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 1554 bytes, IP MTU 1500 bytes
+LineSpeed auto
+Members in this channel:
+ARP type: ARPA, ARP Timeout 04:00:00
+Queueing strategy: fifo
+Input Statistics:
+     0 packets, 0 bytes
+     0 64-byte pkts, 0 over 64-byte pkts, 0 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     0 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+Output Statistics:
+     0 packets, 0 bytes, 0 underruns
+     0 64-byte pkts, 0 over 64-byte pkts, 0 over 127-byte pkts
+     0 over 255-byte pkts, 0 over 511-byte pkts, 0 over 1023-byte pkts
+     0 Multicasts, 0 Broadcasts, 0 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          0 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+Port-channel 102 is up, line protocol is up
+Hardware address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1258343424
+Minimum number of links to bring Port-channel up is 1
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 200000 Mbit
+Members in this channel:  Hu 1/1(U) Hu 1/2(U)
+ARP type: ARPA, ARP Timeout 04:00:00
+Queueing strategy: fifo
+Input Statistics:
+     1857784590 packets, 3008595511418 bytes
+     215083948 64-byte pkts, 151642646 over 64-byte pkts, 489669108 over 127-byte pkts
+     451038318 over 255-byte pkts, 115570585 over 511-byte pkts, 44995627 over 1023-byte pkts
+     57894 Multicasts, 899 Broadcasts, 1857725797 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+Output Statistics:
+     1894560732 packets, 2636419171505 bytes, 0 underruns
+     113374484 64-byte pkts, 1279885512 over 64-byte pkts, 83520554 over 127-byte pkts
+     14242096 over 255-byte pkts, 41436674 over 511-byte pkts, 13155829 over 1023-byte pkts
+     5210332 Multicasts, 5081195 Broadcasts, 1884269205 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 29.00 Mbits/sec,       2244 packets/sec, 0.01% of line-rate
+     Output 02.00 Mbits/sec,       1912 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+Port-channel 103 is up, line protocol is up
+Description: PortChannel to PB-Z9264F
+Hardware address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1258343936
+Minimum number of links to bring Port-channel up is 1
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 500000 Mbit
+Members in this channel:  Hu 1/9(U) Hu 1/13(U) Hu 1/14(U) Hu 1/15(U) Hu 1/16(U)
+ARP type: ARPA, ARP Timeout 04:00:00
+Queueing strategy: fifo
+Input Statistics:
+     48268654558 packets, 233955718958186 bytes
+     340299372 64-byte pkts, 15643235564 over 64-byte pkts, 1645546908 over 127-byte pkts
+     756840988 over 255-byte pkts, 471926659 over 511-byte pkts, 465702120 over 1023-byte pkts
+     28572239 Multicasts, 124629 Broadcasts, 48239874323 Unicasts
+     38 runts, 0 giants, 82856 throttles
+     511 CRC, 0 overrun, 0 discarded
+Output Statistics:
+     61547157552 packets, 274566826418848 bytes, 0 underruns
+     525016636 64-byte pkts, 9477927294 over 64-byte pkts, 1668089679 over 127-byte pkts
+     1098163417 over 255-byte pkts, 329649241 over 511-byte pkts, 1260524118 over 1023-byte pkts
+     150007 Multicasts, 39 Broadcasts, 61547007506 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 768.00 Mbits/sec,      28824 packets/sec, 0.15% of line-rate
+     Output 1067.00 Mbits/sec,      29341 packets/sec, 0.21% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+Port-channel 104 is up, line protocol is up
+Description: PortChannel to Arista-R02
+Hardware address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1258344448
+Minimum number of links to bring Port-channel up is 1
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 200000 Mbit
+Members in this channel:  Hu 1/17(U) Hu 1/19(U)
+ARP type: ARPA, ARP Timeout 04:00:00
+Queueing strategy: fifo
+Input Statistics:
+     1332015 packets, 239405835 bytes
+     15980 64-byte pkts, 673602 over 64-byte pkts, 102451 over 127-byte pkts
+     539214 over 255-byte pkts, 727 over 511-byte pkts, 1 over 1023-byte pkts
+     56750 Multicasts, 0 Broadcasts, 1275265 Unicasts
+     0 runts, 0 giants, 0 throttles
+     0 CRC, 0 overrun, 0 discarded
+Output Statistics:
+     7458365 packets, 572294135 bytes, 0 underruns
+     423418 64-byte pkts, 6921613 over 64-byte pkts, 46083 over 127-byte pkts
+     67016 over 255-byte pkts, 50 over 511-byte pkts, 152 over 1023-byte pkts
+     1133913 Multicasts, 4954062 Broadcasts, 1370390 Unicasts
+     0 throttles, 0 discarded, 0 collisions, 0 wreddrops
+Rate info (interval 299 seconds):
+     Input 00.00 Mbits/sec,          2 packets/sec, 0.00% of line-rate
+     Output 00.00 Mbits/sec,          7 packets/sec, 0.00% of line-rate
+Time since last interface status change: 1w2d20h
+
+
+Vlan 1 is down, line protocol is down
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1275068928
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 1554 bytes, IP MTU 1500 bytes
+LineSpeed auto
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Time since last interface status change: 1w2d20h
+Input Statistics:
+    2018216 packets, 319380621 bytes
+Output Statistics:
+    1582437 packets, 297820513 bytes
+
+
+Vlan 16 is up, line protocol is up
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1275076608
+Internet address is 172.20.1.1/23
+Mode of IPv4 Address Assignment : MANUAL
+DHCP Client-ID(61): 4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 10000 Mbit
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Time since last interface status change: 1w2d20h
+Input Statistics:
+    201721171 packets, 22224797286 bytes
+Output Statistics:
+    301083317 packets, 39344941764 bytes
+
+
+Vlan 43 is up, line protocol is up
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1275090432
+Internet address is 198.32.43.1/25
+Mode of IPv4 Address Assignment : MANUAL
+DHCP Client-ID(61): 4c7625e844c2
+Link local IPv6 address: fe80::4e76:25ff:fee8:44c2/64
+Global IPv6 address: 2605:d9c0:2:10::1/60
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 10000 Mbit
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Time since last interface status change: 1w2d20h
+Input Statistics:
+    72389369931 packets, 309966813512117 bytes
+Output Statistics:
+    57903437758 packets, 262944978912053 bytes
+
+
+Vlan 67 is up, line protocol is up
+Description: P2P LRT building SDN testbed
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1275102720
+Internet address is 192.84.86.239/31
+Mode of IPv4 Address Assignment : MANUAL
+DHCP Client-ID(61): 4c7625e844c2
+Link local IPv6 address: fe80::4e76:25ff:fee8:44c2/64
+Global IPv6 address: 2605:d9c0:0:ff02::1/127
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 500000 Mbit
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Time since last interface status change: 1w2d20h
+Input Statistics:
+    47073797969 packets, 227875542319685 bytes
+Output Statistics:
+    61483691707 packets, 274560528778176 bytes
+
+
+Vlan 100 is up, line protocol is up
+Description: Kubernetes Multus for SENSE
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1275119616
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+Link local IPv6 address: fe80::4e76:25ff:fee8:44c2/64
+Global IPv6 address: 2605:d9c0:2:fff9::1/64
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 40000 Mbit
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Time since last interface status change: 1w2d20h
+Input Statistics:
+    149 packets, 12742 bytes
+Output Statistics:
+    51775 packets, 5319750 bytes
+
+
+Vlan 101 is up, line protocol is up
+Description: Kubernetes Multus for SENSE-Rucio XRootD fff1 IPv6 Range
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1275120128
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+Link local IPv6 address: fe80::4e76:25ff:fee8:44c2/64
+Global IPv6 address: 2605:d9c0:2:fff1::1/64
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 40000 Mbit
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Time since last interface status change: 1w2d20h
+Input Statistics:
+    95169149 packets, 9524544000 bytes
+Output Statistics:
+    1390844163 packets, 6405843270506 bytes
+
+
+Vlan 102 is up, line protocol is up
+Description: Kubernetes Multus for SENSE-Rucio XRootD fff2 IPv6 Range
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1275120640
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+Link local IPv6 address: fe80::4e76:25ff:fee8:44c2/64
+Global IPv6 address: 2605:d9c0:2:fff2::1/64
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 40000 Mbit
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Time since last interface status change: 1w2d20h
+Input Statistics:
+    139 packets, 11838 bytes
+Output Statistics:
+    575032 packets, 54502014 bytes
+
+
+Vlan 103 is up, line protocol is up
+Description: Kubernetes Multus for SENSE-Rucio XRootD fff3 IPv6 Range
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1275121152
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+Link local IPv6 address: fe80::4e76:25ff:fee8:44c2/64
+Global IPv6 address: 2605:d9c0:2:fff3::1/64
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 40000 Mbit
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Time since last interface status change: 1w2d20h
+Input Statistics:
+    1027 packets, 2013568 bytes
+Output Statistics:
+    173429 packets, 16761299 bytes
+
+
+Vlan 300 is down, line protocol is down
+Description: "testing BIDI transceiver"
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1275222016
+Internet address is 172.20.10.10/24
+Mode of IPv4 Address Assignment : MANUAL
+DHCP Client-ID(61): 4c7625e844c2
+MTU 1554 bytes, IP MTU 1500 bytes
+LineSpeed auto
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Time since last interface status change: 1w2d20h
+Input Statistics:
+    0 packets, 0 bytes
+Output Statistics:
+    0 packets, 0 bytes
+
+
+Vlan 1234 is up, line protocol is down
+Description: test-vlan-ignore
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1275700224
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 1554 bytes, IP MTU 1500 bytes
+LineSpeed auto
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w1d2h
+Queueing strategy: fifo
+Time since last interface status change: 1w1d2h
+Input Statistics:
+    0 packets, 0 bytes
+Output Statistics:
+    0 packets, 0 bytes
+
+
+Vlan 3873 is up, line protocol is up
+Vlan alias name is: Vlan 3873
+Description: urn:ogf:network:service+899620b2-4009-49bf-8bbd-ee54776df622:vt+l2-policy::Connection_1
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1277051392
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+Link local IPv6 address: fe80::4e76:25ff:fee8:44c2/64
+Global IPv6 address: fc00:1788::1:2c02/64
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 500000 Mbit
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Time since last interface status change: 1w2d20h
+Input Statistics:
+    1166933494 packets, 6078109559718 bytes
+Output Statistics:
+    71754225 packets, 6912182969 bytes
+
+
+Vlan 3874 is up, line protocol is up
+Vlan alias name is: Vlan 3874
+Description: urn:ogf:network:service+1620997b-2343-41ca-82fc-f6e53458bc76:vt+l2-policy::Connection_1
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1277051904
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Time since last interface status change: 1w2d20h
+Input Statistics:
+    435418 packets, 31755214 bytes
+Output Statistics:
+    438281 packets, 32101190 bytes
+
+
+Vlan 3912 is up, line protocol is up
+Vlan alias name is: Vlan 3912
+Description: urn:ogf:network:service+39be31cb-d762-4525-ba9e-3b28d7d5b8cf:vt+l2-policy::Connection_1
+Address is 4c:76:25:e8:44:c2, Current address is 4c:76:25:e8:44:c2
+Interface index is 1277071360
+Internet address is not set
+Mode of IPv4 Address Assignment : NONE
+DHCP Client-ID :4c7625e844c2
+MTU 9416 bytes, IP MTU 9398 bytes
+LineSpeed 100000 Mbit
+ARP type: ARPA, ARP Timeout 04:00:00
+Last clearing of "show interface" counters 1w2d20h
+Queueing strategy: fifo
+Time since last interface status change: 1w2d20h
+Input Statistics:
+    447690 packets, 32849502 bytes
+Output Statistics:
+    471392 packets, 35152370 bytes
+
+

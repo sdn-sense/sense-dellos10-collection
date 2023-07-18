@@ -1,0 +1,15 @@
+namespace: sense
+name: dellos10
+version: 1.0.0
+readme: README.md
+authors:
+- Justas Balcas <juztas@gmail.com>
+description: Ansible Network Collections for SENSE Dell OS 9
+license_file: LICENCE
+tags: [Dell, DellOS10]
+dependencies:
+  ansible.netcommon: '>=1.0.0'
+repository: https://github.com/sdn-sense/sense-dellos10-collection
+documentation: https://github.com/sdn-sense/sense-dellos10-collection
+homepage: https://github.com/sdn-sense/sense-dellos10-collection
+issues: https://github.com/sdn-sense/sense-dellos10-collection

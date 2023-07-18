@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible-core/2.15/dev_guide/testing/sanity/shebang.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test shebang` [[explain](https://docs.ansible.com/ansible-core/2.15/dev_guide/testing/sanity/shebang.html)] failed with 9 errors:", 
+            "output": "export-env.sh:0:0: file without shebang should not be executable\nplugins/action/dellos10.py:1:1: unexpected non-module shebang: b'#!/usr/bin/python3'\nplugins/cliconf/dellos10.py:1:1: unexpected non-module shebang: b'#!/usr/bin/python'\nplugins/module_utils/network/dellos10.py:1:1: unexpected non-module shebang: b'#!/usr/bin/python3'\nplugins/modules/dellos10_facts.py:1:1: expected module shebang \"b'#!/usr/bin/python'\" but found: b'#!/usr/bin/env python3'\nplugins/terminal/dellos10.py:1:1: unexpected non-module shebang: b'#!/usr/bin/python'\nrun.sh:0:0: file without shebang should not be executable\ntests/unit/modules/dellos10_module.py:1:1: unexpected non-module shebang: b'#!/usr/bin/env python3'\ntests/unit/modules/test_dellos10_facts.py:1:1: unexpected non-module shebang: b'#!/usr/bin/env python3'"
+        }
+    ], 
+    "verified": false
+}
