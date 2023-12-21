@@ -212,35 +212,35 @@ class Default(FactsBase):
 
     def parseRunningConfig(self, data):
         """General Parser to parse ansible config"""
+        calls = {
+            "tagged": self.parse_tagged,
+            "untagged": self.parse_untagged,
+            "portmode": self.parse_portmode,
+            "switchport": self.parse_switchport,
+            "spanning-tree": self.parse_spanning_tree,
+            "ip_vrf": self.parse_ip_vrf
+        }
         interfaceSt = False
-        key = None
+        intfKey = None
         for line in data.split('\n'):
             line = line.strip()  # Remove all white spaces
             if line == "!" and interfaceSt:
                 interfaceSt = False  # This means interface ended!
             elif line.startswith('interface'):
                 interfaceSt = True
-                key = normalizeIntfName(line[10:])
-            elif interfaceSt:
-                if line.startswith('switchport access vlan'):
-                    untaggedVlan = line.split(' ')[3]
-                    self.facts['interfaces'].setdefault(f"Vlan {untaggedVlan}", {})
-                    self.facts['interfaces'][f"Vlan {untaggedVlan}"].setdefault("untagged", [])
-                    self.facts['interfaces'][f"Vlan {untaggedVlan}"]["untagged"].append(key)
-                elif line.startswith('switchport trunk allowed vlan'):
-                    vlans = line.split(' ')[4]
-                    for vlan in vlans.split(','):
-                        tmpVlan = vlan.split('-')
-                        if len(tmpVlan) == 1:
-                            self.facts['interfaces'].setdefault(f"Vlan {vlan}", {})
-                            self.facts['interfaces'][f"Vlan {vlan}"].setdefault("tagged", [])
-                            self.facts['interfaces'][f"Vlan {vlan}"]["tagged"].append(key)
-                        elif len(tmpVlan) == 2:
-                            for val in range(int(tmpVlan[0]), int(tmpVlan[1]) + 1, 1):
-                                self.facts['interfaces'].setdefault(f"Vlan {val}", {})
-                                self.facts['interfaces'][f"Vlan {val}"].setdefault("tagged", [])
-                                self.facts['interfaces'][f"Vlan {val}"]["tagged"].append(key)
-
+                intfKey = normalizeIntfName(line[10:])
+            elif interfaceSt and intfKey in self.facts["interfaces"]:
+                for key, call in calls.items():
+                    if key in ['tagged', 'untagged']:
+                        call(line, intfKey)
+                        continue
+                    tmpOut = call(line)
+                    if tmpOut and isinstance(tmpOut, list):
+                        self.facts["interfaces"][intfKey].setdefault(key, [])
+                        self.facts["interfaces"][intfKey][key] += tmpOut
+                    elif tmpOut and isinstance(tmpOut, str):
+                        self.facts["interfaces"][intfKey].setdefault(key, "")
+                        self.facts["interfaces"][intfKey][key] = tmpOut
 
     def storeMacs(self, intfdata):
         """Store Mac inside info for all known device macs"""
@@ -253,25 +253,84 @@ class Default(FactsBase):
     def parseInterfaces(data):
         """Parse interfaces from output"""
         parsed = {}
-        newline_count = 0
-        interface_start = True
         key = None
         for line in data.split('\n'):
-            if interface_start:
-                newline_count = 0
             if len(line) == 0:
-                newline_count += 1
-                if newline_count == 2:
-                    interface_start = True
-            else:
-                match = re.match(r'^(\S+) (\S+) is (up|down)', line)
-                if match and interface_start:
-                    interface_start = False
-                    key = f"{match.group(1)} {match.group(2)}"
-                    parsed[key] = line
-                else:
-                    parsed[key] += '\n%s' % line
+                continue
+            match = re.match(r'^(.*) is (.*), line protocol is (.*)', line)
+            if match:
+                key = match.group(1)
+                if key == 'NULL':
+                    key = None
+                    continue
+                parsed[key] = line
+            elif key:
+                parsed[key] += '\n%s' % line
         return parsed
+
+    def parse_tagged(self, line, intfKey):
+        """Parse Tagged Vlans"""
+        if line.startswith('switchport trunk allowed vlan'):
+            vlans = line.split(' ')[4]
+            for vlan in vlans.split(','):
+                tmpVlan = vlan.split('-')
+                if len(tmpVlan) == 1:
+                    self.facts['interfaces'].setdefault(f"Vlan {vlan}", {})
+                    self.facts['interfaces'][f"Vlan {vlan}"].setdefault("tagged", [])
+                    self.facts['interfaces'][f"Vlan {vlan}"]["tagged"].append(intfKey)
+                elif len(tmpVlan) == 2:
+                    for val in range(int(tmpVlan[0]), int(tmpVlan[1]) + 1, 1):
+                        self.facts['interfaces'].setdefault(f"Vlan {val}", {})
+                        self.facts['interfaces'][f"Vlan {val}"].setdefault("tagged", [])
+                        self.facts['interfaces'][f"Vlan {val}"]["tagged"].append(intfKey)
+        return None
+
+    def parse_untagged(self, line, intfKey):
+        """Parse Untagged Vlans"""
+        if line.startswith('switchport access vlan'):
+            untaggedVlan = line.split(' ')[3]
+            self.facts['interfaces'].setdefault(f"Vlan {untaggedVlan}", {})
+            self.facts['interfaces'][f"Vlan {untaggedVlan}"].setdefault("untagged", [])
+            self.facts['interfaces'][f"Vlan {untaggedVlan}"]["untagged"].append(intfKey)
+        return None
+
+    @staticmethod
+    def parse_portmode(data):
+        """Parse Portmode"""
+        tmpOut = ""
+        if data.startswith("switchport access vlan "):
+            tmpOut = ['access']
+        elif data.startswith("switchport trunk allowed vlan"):
+            tmpOut = ['trunk']
+        return tmpOut
+
+    @staticmethod
+    def parse_switchport(data):
+        """Parse Switchport"""
+        tmpOut = ""
+        if data == 'switchport mode trunk':
+            tmpOut = 'yes'
+        elif data == 'no switchport':
+            tmpOut = 'no'
+        return tmpOut
+
+    @staticmethod
+    def parse_spanning_tree(data):
+        """Parse spanning tree"""
+        tmpOut = []
+        if data.startswith('no spanning-tree'):
+            tmpOut = ["no"]
+        elif data.startswith('spanning-tree'):
+            tmpOut = [data[14:]]
+        return tmpOut
+
+    @staticmethod
+    def parse_ip_vrf(data):
+        """Parse ip vrf"""
+        tmpOut = ""
+        if data.startswith('ip vrf'):
+            tmpOut = data[7:]
+        return tmpOut
 
     @staticmethod
     def parse_description(data):
