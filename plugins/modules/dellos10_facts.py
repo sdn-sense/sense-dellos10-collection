@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+"""Dell EMC Networking OS10 Facts Module"""
 # Copyright: Contributors to the Ansible project
 # GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
 from __future__ import (absolute_import, division, print_function)
@@ -37,12 +37,13 @@ class FactsBase:
 
 
 class Routing(FactsBase):
-
+    """Routing Information"""
     COMMANDS = [
         'show running-config',
     ]
 
     def populate(self):
+        """Populate responses from device"""
         super(Routing, self).populate()
         data = self.responses[0].split('\n')
         self.facts['ipv6'] = []
@@ -114,6 +115,7 @@ class LLDPInfo(FactsBase):
     COMMANDS = ['show lldp neighbors detail']
 
     def populate(self):
+        """Populate responses from device"""
         super(LLDPInfo, self).populate()
         data = self.responses[0]
         self.facts['lldp'] = {}
@@ -165,10 +167,12 @@ class LLDPInfo(FactsBase):
 class Default(FactsBase):
     """All Interfaces Class"""
     COMMANDS = ['show interface',
+                'show interface port-channel',
                 'show running-config',
                 'show system']
 
     def populate(self):
+        """Populate responses from device"""
         super(Default, self).populate()
 
         self.facts.setdefault('info', {'macs': []})
@@ -184,7 +188,9 @@ class Default(FactsBase):
                  'operstatus': self.parse_operstatus,
                  'type': self.parse_type,
                  'channel-member': self.parse_members}
-        interfaceData = self.parseInterfaces(self.responses[0])
+        # Dell OS 10 `show interface` will not list port_members... Weird no?
+        # but `show interface port-channel will list port_members. so we joint 2 outputs
+        interfaceData = self.parseInterfaces(self.responses[0] + "\n\n" + self.responses[1])
         for intfName, intfDict in interfaceData.items():
             intf = {}
             for key in calls:
@@ -194,11 +200,11 @@ class Default(FactsBase):
             self.facts['interfaces'][intfName] = intf
             self.storeMacs(intf)
         # Use running config to identify all tagged, untagged vlans and mapping
-        self.parseRunningConfig(self.responses[1])
+        self.parseRunningConfig(self.responses[2])
         # Also write running config to output
-        self.facts['config'] = self.responses[1]
+        self.facts['config'] = self.responses[2]
 
-        systemMac = self.parse_stack_mac(self.responses[2])
+        systemMac = self.parse_stack_mac(self.responses[3])
         if systemMac:
             self.facts['info']['macs'].append(systemMac)
 
@@ -265,7 +271,7 @@ class Default(FactsBase):
                     continue
                 parsed[key] = line
             elif key:
-                parsed[key] += '\n%s' % line
+                parsed[key] += f'\n{line}'
         return parsed
 
     def parse_tagged(self, line, intfKey):
@@ -283,7 +289,6 @@ class Default(FactsBase):
                         self.facts['interfaces'].setdefault(f"Vlan {val}", {})
                         self.facts['interfaces'][f"Vlan {val}"].setdefault("tagged", [])
                         self.facts['interfaces'][f"Vlan {val}"]["tagged"].append(intfKey)
-        return None
 
     def parse_untagged(self, line, intfKey):
         """Parse Untagged Vlans"""
@@ -292,7 +297,6 @@ class Default(FactsBase):
             self.facts['interfaces'].setdefault(f"Vlan {untaggedVlan}", {})
             self.facts['interfaces'][f"Vlan {untaggedVlan}"].setdefault("untagged", [])
             self.facts['interfaces'][f"Vlan {untaggedVlan}"]["untagged"].append(intfKey)
-        return None
 
     @staticmethod
     def parse_portmode(data):
@@ -334,6 +338,7 @@ class Default(FactsBase):
 
     @staticmethod
     def parse_description(data):
+        """Parse description"""
         match = re.search(r'Description: (.+)$', data, re.M)
         if match:
             return match.group(1)
@@ -341,6 +346,7 @@ class Default(FactsBase):
 
     @staticmethod
     def parse_macaddress(data):
+        """Parse macaddress"""
         for reg in [r'address is (\S+),', r'address is (\S+)']:
             match = re.search(reg, data)
             if match:
@@ -350,6 +356,7 @@ class Default(FactsBase):
 
     @staticmethod
     def parse_ipv4(data):
+        """Parse ipv4"""
         match = re.search(r'Internet address is (\S+)', data)
         if match:
             if match.group(1) != "not":
@@ -359,6 +366,7 @@ class Default(FactsBase):
 
     @staticmethod
     def parse_ipv6(data):
+        """Parse ipv6"""
         match = re.search(r'Global IPv6 address: (\S+)', data)
         if match:
             if match.group(1) != "not":
@@ -368,6 +376,7 @@ class Default(FactsBase):
 
     @staticmethod
     def parse_mtu(data):
+        """Parse mtu"""
         match = re.search(r'MTU (\d+)', data)
         if match:
             return int(match.group(1))
@@ -375,18 +384,20 @@ class Default(FactsBase):
 
     @staticmethod
     def parse_bandwidth(data):
+        """Parse bandwidth"""
         match = re.search(r'LineSpeed (\d+)(G|M)?', data)
         if match:
             mgroups = match.groups()
             if mgroups[1] and mgroups[1] == 'G':
                 return int(mgroups[0]) * 1000
-            elif mgroups[1] and mgroups[1] == 'M':
+            if mgroups[1] and mgroups[1] == 'M':
                 return int(mgroups[0])
             return int(mgroups[0])
         return None
 
     @staticmethod
     def parse_mediatype(data):
+        """Parse mediatype"""
         media = re.search(r'(.+) media present, (.+)', data, re.M)
         if media:
             match = re.search(r'type is (.+)$', media.group(0), re.M)
@@ -395,6 +406,7 @@ class Default(FactsBase):
 
     @staticmethod
     def parse_type(data):
+        """Parse type"""
         match = re.search(r'Hardware is (.+),', data, re.M)
         if match:
             return match.group(1)
@@ -402,6 +414,7 @@ class Default(FactsBase):
 
     @staticmethod
     def parse_lineprotocol(data):
+        """Parse lineprotocol"""
         match = re.search(r'line protocol is (\w+[ ]?\w*)\(?.*\)?$', data, re.M)
         if match:
             return match.group(1)
@@ -409,6 +422,7 @@ class Default(FactsBase):
 
     @staticmethod
     def parse_operstatus(data):
+        """Parse operstatus"""
         match = re.search(r'^(\S+) (\S+) is (up|down),', data, re.M)
         if match:
             return match.group(3)
@@ -416,13 +430,52 @@ class Default(FactsBase):
 
     @staticmethod
     def parse_members(data):
-        match = re.search(r'^Members in this channel: +([a-zA-Z0-9 /\(\)]+)$', data, re.M)
+        """Parse port-channel members"""
+        match = re.search(r'^Members in this channel: +([a-zA-Z0-9 /\-\,]+)$', data, re.M)
         out = []
         if match:
             # Ethernet
             allintf = match.group(1).replace('Eth ', '').split(',')
-            for intf in allintf:
-                out.append(f"Ethernet {intf}")
+            for vals in allintf:
+                if "-" in vals:
+                    stVal = vals.split("-")[0].split("/")
+                    enVal = vals.split("-")[1].split("/")
+                    mod, modline = None, None
+                    # If first digit not equal - replace first
+                    if (
+                        stVal[0] != enVal[0]
+                        and stVal[1] == enVal[1]
+                        and stVal[2] == enVal[2]
+                        and int(stVal[0]) < int(enVal[0])
+                    ):
+                        modline = f"%s/{stVal[1]}/{stVal[2]}"
+                        mod = 0
+                    # If second digit not equal - replace second
+                    elif (
+                        stVal[0] == enVal[0]
+                        and stVal[1] != enVal[1]
+                        and stVal[2] == enVal[2]
+                        and int(stVal[1]) < int(enVal[1])
+                    ):
+                        modline = f"{stVal[0]}/%s/{stVal[2]}"
+                        mod = 1
+                    # If third digit not equal - replace third
+                    elif (
+                        stVal[0] == enVal[0]
+                        and stVal[1] == enVal[1]
+                        and stVal[2] != enVal[2]
+                        and int(stVal[2]) < int(enVal[2])
+                    ):
+                        modline = f"{stVal[0]}/{stVal[1]}/%s"
+                        mod = 2
+                    if mod and modline:
+                        for val in range(int(stVal[mod]), int(enVal[mod]) + 1, 1):
+                            newval = modline % val
+                            out.append(f"Ethernet {newval}")
+                    else:
+                        display.warning(f'Failed increment ports. Report bug. Input Line: {data}')
+                else:
+                    out.append(f"Ethernet {vals}")
         return out
 
 
@@ -481,7 +534,7 @@ def main():
 
     ansible_facts = {}
     for key, value in iteritems(facts):
-        key = 'ansible_net_%s' % key
+        key = f'ansible_net_{key}'
         ansible_facts[key] = value
 
     warnings = []
