@@ -15,10 +15,12 @@ from ansible.utils.display import Display
 from ansible_collections.sense.dellos10.plugins.module_utils.network.dellos10 import (
     check_args, dellos10_argument_spec, normalizedip, normalizeIntfName,
     run_commands)
+from ansible_collections.sense.dellos9.plugins.module_utils.runwrapper import (
+    classwrapper, functionwrapper)
 
 display = Display()
 
-
+@classwrapper
 class FactsBase:
     """Base class for Facts"""
 
@@ -37,7 +39,7 @@ class FactsBase:
         """Run commands"""
         return run_commands(self.module, cmd, check_rc=False)
 
-
+@classwrapper
 class Routing(FactsBase):
     """Routing Information"""
 
@@ -169,7 +171,7 @@ class Routing(FactsBase):
                     }
                 )
 
-
+@classwrapper
 class LLDPInfo(FactsBase):
     """LLDP Information and link mapping"""
 
@@ -226,7 +228,7 @@ class LLDPInfo(FactsBase):
             if "local_port_id" in entryOut:
                 self.facts["lldp"][entryOut["local_port_id"]] = entryOut
 
-
+@classwrapper
 class Default(FactsBase):
     """All Interfaces Class"""
 
@@ -307,10 +309,7 @@ class Default(FactsBase):
                 intfKey = normalizeIntfName(line[10:])
             elif interfaceSt and intfKey in self.facts["interfaces"]:
                 for key, call in calls.items():
-                    if key in ["tagged", "untagged"]:
-                        call(line, intfKey)
-                        continue
-                    tmpOut = call(line)
+                    tmpOut = call(line, intfKey)
                     if tmpOut and isinstance(tmpOut, list):
                         self.facts["interfaces"][intfKey].setdefault(key, [])
                         self.facts["interfaces"][intfKey][key] += tmpOut
@@ -361,6 +360,7 @@ class Default(FactsBase):
                         self.facts["interfaces"][f"Vlan {val}"]["tagged"].append(
                             intfKey
                         )
+        return []
 
     def parse_untagged(self, line, intfKey):
         """Parse Untagged Vlans"""
@@ -369,9 +369,10 @@ class Default(FactsBase):
             self.facts["interfaces"].setdefault(f"Vlan {untaggedVlan}", {})
             self.facts["interfaces"][f"Vlan {untaggedVlan}"].setdefault("untagged", [])
             self.facts["interfaces"][f"Vlan {untaggedVlan}"]["untagged"].append(intfKey)
+        return []
 
     @staticmethod
-    def parse_portmode(data):
+    def parse_portmode(data, _intfKey):
         """Parse Portmode"""
         tmpOut = ""
         if data.startswith("switchport access vlan "):
@@ -381,7 +382,7 @@ class Default(FactsBase):
         return tmpOut
 
     @staticmethod
-    def parse_switchport(data):
+    def parse_switchport(data, _intfKey):
         """Parse Switchport"""
         tmpOut = ""
         if data == "switchport mode trunk":
@@ -391,7 +392,7 @@ class Default(FactsBase):
         return tmpOut
 
     @staticmethod
-    def parse_spanning_tree(data):
+    def parse_spanning_tree(data, _intfKey):
         """Parse spanning tree"""
         tmpOut = []
         if data.startswith("no spanning-tree"):
@@ -401,7 +402,7 @@ class Default(FactsBase):
         return tmpOut
 
     @staticmethod
-    def parse_ip_vrf(data):
+    def parse_ip_vrf(data, _intfKey):
         """Parse ip vrf"""
         tmpOut = ""
         if data.startswith("ip vrf"):
@@ -559,7 +560,7 @@ FACT_SUBSETS = {"default": Default, "lldp": LLDPInfo, "routing": Routing}
 
 VALID_SUBSETS = frozenset(FACT_SUBSETS.keys())
 
-
+@functionwrapper
 def main():
     """main entry point for module execution"""
     argument_spec = {"gather_subset": {"default": [], "type": "list"}}
