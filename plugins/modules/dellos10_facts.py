@@ -15,7 +15,7 @@ from ansible.utils.display import Display
 from ansible_collections.sense.dellos10.plugins.module_utils.network.dellos10 import (
     check_args, dellos10_argument_spec, normalizedip, normalizeIntfName,
     run_commands)
-from ansible_collections.sense.dellos9.plugins.module_utils.runwrapper import (
+from ansible_collections.sense.dellos10.plugins.module_utils.runwrapper import (
     classwrapper, functionwrapper)
 
 display = Display()

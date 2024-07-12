@@ -10,10 +10,11 @@ from ansible.utils.display import Display
 from ansible.module_utils._text import to_text, to_bytes
 from ansible.plugins.terminal import TerminalBase
 from ansible.errors import AnsibleConnectionFailure
-
+from ansible_collections.sense.dellos10.plugins.module_utils.runwrapper import classwrapper
 display = Display()
 
 
+@classwrapper
 class TerminalModule(TerminalBase):
 
     terminal_stdout_re = [

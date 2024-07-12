@@ -9,8 +9,9 @@ import json
 from ansible.module_utils._text import to_text
 from ansible.plugins.cliconf import CliconfBase, enable_mode
 from ansible_collections.ansible.netcommon.plugins.module_utils.network.common.utils import to_list
+from ansible_collections.sense.dellos10.plugins.module_utils.runwrapper import classwrapper
 
-
+@classwrapper
 class Cliconf(CliconfBase):
 
     def get_device_info(self):

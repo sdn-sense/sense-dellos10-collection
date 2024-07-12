@@ -12,10 +12,12 @@ from ansible.module_utils.connection import Connection
 from ansible_collections.ansible.netcommon.plugins.action.network import ActionModule as ActionNetworkModule
 from ansible_collections.ansible.netcommon.plugins.module_utils.network.common.utils import load_provider
 from ansible_collections.sense.dellos10.plugins.module_utils.network.dellos10 import dellos10_provider_spec
+from ansible_collections.sense.dellos10.plugins.module_utils.runwrapper import classwrapper
 
 display = Display()
 
 
+@classwrapper
 class ActionModule(ActionNetworkModule):
     """ Ansible Action Module"""
 

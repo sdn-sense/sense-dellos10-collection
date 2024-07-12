@@ -10,7 +10,7 @@ from ansible_collections.sense.dellos10.plugins.module_utils.network.dellos10 im
 from ansible_collections.sense.dellos10.plugins.module_utils.network.dellos10 import dellos10_argument_spec, check_args
 from ansible_collections.sense.dellos10.plugins.module_utils.network.dellos10 import load_config, run_commands
 from ansible_collections.ansible.netcommon.plugins.module_utils.network.common.config import NetworkConfig, dumps
-from ansible_collections.sense.dellos9.plugins.module_utils.runwrapper import functionwrapper
+from ansible_collections.sense.dellos10.plugins.module_utils.runwrapper import functionwrapper
 __metaclass__ = type
 
 
