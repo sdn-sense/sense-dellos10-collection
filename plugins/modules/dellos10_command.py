@@ -1,8 +1,15 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""Dell OS 10 Command execute
+Copyright: Contributors to the SENSE Project
+GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
 
-# Copyright: Contributors to the Ansible project
-# GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
+Title                   : sdn-sense/sense-dellos10-collection
+Author                  : Justas Balcas
+Email                   : juztas (at) gmail.com
+@Copyright              : General Public License v3.0+
+Date                    : 2024/07/15
+"""
 from __future__ import (absolute_import, division, print_function)
 
 __metaclass__ = type
@@ -21,20 +28,29 @@ display = Display()
 
 @functionwrapper
 def toLines(stdout):
+    """stdout to list lines, split by \n character"""
     for item in stdout:
         if isinstance(item, string_types):
             item = str(item).split('\n')
         yield item
 
 @functionwrapper
-def parse_commands(module, warnings):
+def parse_commands(module, _warnings):
+    """Parse commands"""
     command = ComplexList({'command': {'key': True}, 'prompt': {}, 'answer': {}}, module)
-    commands = command(module.params['commands'])
+    if module.params.get("src", ""):
+        # Load src file
+        with open(module.params["src"], encoding="utf-8") as fd:
+            cmds = fd.readlines()
+            # if cmd starts with comment, ignore:
+            cmds = [cmd for cmd in cmds if not cmd.startswith("#")]
+            commands = command(cmds)
+    elif module.params["commands"]:
+        commands = command(module.params["commands"])
+
     for _index, item in enumerate(commands):
-        if module.check_mode and not item['command'].startswith('show'):
-            warnings.append('only show commands are supported when using check mode, not executing `%s`' % item['command'])
-        elif item['command'].startswith('conf'):
-            module.fail_json(msg='dellos10_command does not support running config mode commands.  Please use dellos10_config instead')
+        if item['command'].startswith('conf'):
+            module.fail_json(msg='dellos9_command does not support running config mode commands.  Please use dellos9_config instead')
     return commands
 
 @functionwrapper
@@ -42,7 +58,8 @@ def main():
     """main entry point for module execution
     """
     argument_spec = {
-        'commands': {'type': 'list', 'required': True},
+        'lines': {'aliases': ['commands'], 'type': 'list'},
+        'src': {'type': 'path'},
         'wait_for': {'type': 'list', 'elements': 'str'},
         'match': {'default': 'all', 'choices': ['all', 'any']},
         'retries': {'default': 10, 'type': 'int'},
@@ -50,7 +67,10 @@ def main():
 
     argument_spec.update(dellos10_argument_spec)
 
+    mutually_exclusive = [("lines", "src")]
+
     module = AnsibleModule(argument_spec=argument_spec,
+                           mutually_exclusive=mutually_exclusive,
                            supports_check_mode=True)
 
     result = {'changed': False}
