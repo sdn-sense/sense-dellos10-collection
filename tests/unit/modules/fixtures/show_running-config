@@ -37,6 +37,7 @@ cam-acl l2acl 2 ipv4acl 2 ipv6acl 0 ipv4qos 2 l2qos 0 l2pt 0 ipmacacl 0 vman-qos
 cam-acl-vlan vlanopenflow 1 vlaniscsi 1
 !
 username sense password 7 278486fnajksdfnaksf2 privilege 15
+username sense password 7 agsfdsdgsdfdssdf privilege 15
 !
 ip vrf lhcone 1
 !
