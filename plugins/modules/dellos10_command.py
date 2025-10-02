@@ -10,8 +10,6 @@ Email                   : juztas (at) gmail.com
 @Copyright              : General Public License v3.0+
 Date                    : 2024/07/15
 """
-from __future__ import (absolute_import, division, print_function)
-
 __metaclass__ = type
 
 import time
@@ -37,6 +35,7 @@ def toLines(stdout):
 @functionwrapper
 def parse_commands(module, _warnings):
     """Parse commands"""
+    commands = []
     command = ComplexList({'command': {'key': True}, 'prompt': {}, 'answer': {}}, module)
     if module.params.get("src", ""):
         # Load src file

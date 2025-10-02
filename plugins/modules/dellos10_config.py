@@ -1,9 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
+"""Dell OS 10 Configuration management"""
 # Copyright: Contributors to the Ansible project
 # GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
-from __future__ import (absolute_import, division, print_function)
 from ansible.module_utils.basic import AnsibleModule
 from ansible.utils.display import Display
 from ansible_collections.sense.dellos10.plugins.module_utils.network.dellos10 import get_config
@@ -28,6 +27,7 @@ display = Display()
 
 @functionwrapper
 def get_candidate(module):
+    """Get candidate config line"""
     candidate = NetworkConfig(indent=1)
     if module.params['src']:
         candidate.load(module.params['src'])
@@ -44,6 +44,7 @@ def get_candidate(module):
 
 @functionwrapper
 def get_running_config(module):
+    """Get running config"""
     contents = module.params['config']
     if not contents:
         contents = get_config(module)
@@ -51,29 +52,26 @@ def get_running_config(module):
 
 @functionwrapper
 def main():
-    backup_spec = dict(
-        filename={},
-        dir_path=dict(type='path')
-    )
-    argument_spec = dict(
-        lines=dict(aliases=['commands'], type='list'),
-        parents=dict(type='list'),
+    """main entry point for module execution"""
+    backup_spec = {"filename": {}, "dir_path": {"type": "path"}}
+    argument_spec = {"lines": {"aliases": ["commands"], "type": "list"},
+                     "parents": {"type": "list"},
 
-        src=dict(type='path'),
+                     "src": {"type": "path"},
 
-        before=dict(type='list'),
-        after=dict(type='list'),
+                     "before": {"type": "list"},
+                     "after": {"type": "list"},
 
-        match=dict(default='line',
-                   choices=['line', 'strict', 'exact', 'none']),
-        replace=dict(default='line', choices=['line', 'block']),
+                     "match": {"default": "line",
+                               "choices": ["line", "strict", "exact", "none"]},
+                     "replace": {"default": "line", "choices": ["line", "block"]},
 
-        update=dict(choices=['merge', 'check'], default='merge'),
-        save=dict(type='bool', default=False),
-        config={},
-        backup=dict(type='bool', default=False),
-        backup_options=dict(type='dict', options=backup_spec)
-    )
+                     "update": {"choices": ["merge", "check"], "default": "merge"},
+                     "save": {"type": "bool", "default": False},
+                     "config": {},
+                     "backup": {"type": "bool", "default": False},
+                     "backup_options": {"type": "dict", "options": backup_spec}
+                     }
 
     argument_spec.update(dellos10_argument_spec)
 
@@ -89,7 +87,7 @@ def main():
     warnings = []
     check_args(module, warnings)
 
-    result = dict(changed=False, saved=False, warnings=warnings)
+    result = {"changed": False, "saved": False, "warnings": warnings}
 
     candidate = get_candidate(module)
 

@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Dell EMC Networking OS10 Facts Module"""
+import json
 # Copyright: Contributors to the Ansible project
 # GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
 import os
-import json
 import tempfile
-from __future__ import absolute_import, division, print_function
 
 __metaclass__ = type
 
@@ -23,24 +22,29 @@ from ansible_collections.sense.dellos10.plugins.module_utils.runwrapper import (
 
 display = Display()
 
+
 @functionwrapper
 def dumpFactsToTmp(ansible_facts):
     """
     Dump ansible_facts to a temp JSON file
     """
+
     def default_serializer(obj):
         if isinstance(obj, set):
             return list(obj)
         if isinstance(obj, bytes):
-            return obj.decode('utf-8', errors='replace')
+            return obj.decode("utf-8", errors="replace")
         return str(obj)
 
     fd, path = tempfile.mkstemp(prefix="ansible_facts_", suffix=".json", dir="/tmp")
     os.close(fd)
 
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(ansible_facts, f, indent=2, ensure_ascii=False, default=default_serializer)
+        json.dump(
+            ansible_facts, f, indent=2, ensure_ascii=False, default=default_serializer
+        )
     return path
+
 
 @classwrapper
 class FactsBase:
@@ -60,6 +64,7 @@ class FactsBase:
     def run(self, cmd):
         """Run commands"""
         return run_commands(self.module, cmd, check_rc=False)
+
 
 @classwrapper
 class Routing(FactsBase):
@@ -193,6 +198,7 @@ class Routing(FactsBase):
                     }
                 )
 
+
 @classwrapper
 class LLDPInfo(FactsBase):
     """LLDP Information and link mapping"""
@@ -249,6 +255,7 @@ class LLDPInfo(FactsBase):
                     entryOut[regName] = intfName
             if "local_port_id" in entryOut:
                 self.facts["lldp"][entryOut["local_port_id"]] = entryOut
+
 
 @classwrapper
 class Default(FactsBase):
@@ -456,7 +463,7 @@ class Default(FactsBase):
         if match:
             if match.group(1) != "not":
                 addr, masklen = match.group(1).split("/")
-                return [dict(address=addr, masklen=int(masklen))]
+                return [{"address": addr, "masklen": int(masklen)}]
         return None
 
     @staticmethod
@@ -466,7 +473,7 @@ class Default(FactsBase):
         if match:
             if match.group(1) != "not":
                 addr, masklen = match.group(1).split("/")
-                return [dict(address=addr, masklen=int(masklen))]
+                return [{"address": addr, "masklen": int(masklen)}]
         return None
 
     @staticmethod
@@ -581,6 +588,7 @@ class Default(FactsBase):
 FACT_SUBSETS = {"default": Default, "lldp": LLDPInfo, "routing": Routing}
 
 VALID_SUBSETS = frozenset(FACT_SUBSETS.keys())
+
 
 @functionwrapper
 def main():
