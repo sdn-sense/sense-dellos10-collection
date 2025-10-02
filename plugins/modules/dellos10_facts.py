@@ -3,6 +3,9 @@
 """Dell EMC Networking OS10 Facts Module"""
 # Copyright: Contributors to the Ansible project
 # GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
+import os
+import json
+import tempfile
 from __future__ import absolute_import, division, print_function
 
 __metaclass__ = type
@@ -19,6 +22,25 @@ from ansible_collections.sense.dellos10.plugins.module_utils.runwrapper import (
     classwrapper, functionwrapper)
 
 display = Display()
+
+@functionwrapper
+def dumpFactsToTmp(ansible_facts):
+    """
+    Dump ansible_facts to a temp JSON file
+    """
+    def default_serializer(obj):
+        if isinstance(obj, set):
+            return list(obj)
+        if isinstance(obj, bytes):
+            return obj.decode('utf-8', errors='replace')
+        return str(obj)
+
+    fd, path = tempfile.mkstemp(prefix="ansible_facts_", suffix=".json", dir="/tmp")
+    os.close(fd)
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(ansible_facts, f, indent=2, ensure_ascii=False, default=default_serializer)
+    return path
 
 @classwrapper
 class FactsBase:
@@ -614,7 +636,12 @@ def main():
 
     warnings = []
     check_args(module, warnings)
-    module.exit_json(ansible_facts=ansible_facts, warnings=warnings)
+    if len(str(ansible_facts)) > 100000:
+        facts_path = dumpFactsToTmp(ansible_facts)
+        display.vvv(facts_path)
+        module.exit_json(ansible_facts_file={"file": facts_path}, warnings=warnings)
+    else:
+        module.exit_json(ansible_facts=ansible_facts, warnings=warnings)
 
 
 if __name__ == "__main__":
