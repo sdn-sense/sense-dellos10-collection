@@ -36,7 +36,9 @@ def dumpFactsToTmp(ansible_facts):
             return obj.decode("utf-8", errors="replace")
         return str(obj)
 
-    fd, path = tempfile.mkstemp(prefix="ansible_facts_", suffix=".json", dir="/tmp")
+    # No dir= : honour $TMPDIR so a full /tmp can be worked around by ops;
+    # SiteRM removes these files after reading them.
+    fd, path = tempfile.mkstemp(prefix="ansible_facts_", suffix=".json")
     os.close(fd)
 
     with open(path, "w", encoding="utf-8") as f:
