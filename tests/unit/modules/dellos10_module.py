@@ -55,6 +55,10 @@ def set_module_args(args):
 
     args = json.dumps({"ANSIBLE_MODULE_ARGS": args})
     basic._ANSIBLE_ARGS = to_bytes(args)
+    # ansible-core >= 2.18 requires a serialization profile alongside
+    # _ANSIBLE_ARGS; older versions do not have this attribute at all.
+    if hasattr(basic, "_ANSIBLE_PROFILE"):
+        basic._ANSIBLE_PROFILE = "legacy"
 
 
 fixture_path = os.path.join(os.path.dirname(__file__), 'fixtures')

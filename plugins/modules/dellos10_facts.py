@@ -589,13 +589,27 @@ class Default(FactsBase):
 
 FACT_SUBSETS = {"default": Default, "lldp": LLDPInfo, "routing": Routing}
 
+# Fixed execution order, independent of set iteration / gather_subset order:
+#   default - cheap, always wanted first
+#   lldp    - topology stitching
+#   routing - best-effort; routing tables can be large/slow, so it must never
+#             delay or (on a shared CLI session) disrupt the earlier subsets
+# Any subset added to FACT_SUBSETS but missing here is appended (sorted) last.
+SUBSET_ORDER = ["default", "lldp", "routing"]
+
 VALID_SUBSETS = frozenset(FACT_SUBSETS.keys())
 
 
 @functionwrapper
 def main():
     """main entry point for module execution"""
-    argument_spec = {"gather_subset": {"default": [], "type": "list"}}
+    argument_spec = {
+        "gather_subset": {"default": [], "type": "list"},
+        # subset_config: authoritative per-subset on/off switch, passed from
+        # ansparams (dict of {subset: bool}). Keys must be valid subsets;
+        # values truthy/falsey. Applied after gather_subset, so it always wins.
+        "subset_config": {"type": "dict", "default": {}},
+    }
     argument_spec.update(dellos10_argument_spec)
     module = AnsibleModule(argument_spec=argument_spec, supports_check_mode=True)
     gather_subset = module.params["gather_subset"]
@@ -628,11 +642,26 @@ def main():
     runable_subsets.difference_update(exclude_subsets)
     runable_subsets.add("default")
 
-    facts = {"gather_subset": [runable_subsets]}
+    # subset_config wins over whatever gather_subset resolved to: explicit
+    # true adds a subset, explicit false removes it (including "default").
+    subset_config = module.params.get("subset_config") or {}
+    unknown = set(subset_config) - VALID_SUBSETS
+    if unknown:
+        module.fail_json(msg=f"subset_config: unknown subset(s) {sorted(unknown)}; valid: {sorted(VALID_SUBSETS)}")
+    for name, enabled in subset_config.items():
+        # tolerate "false"/"no"/0 coming through jinja as strings
+        if module.boolean(enabled):
+            runable_subsets.add(name)
+        else:
+            runable_subsets.discard(name)
 
-    instances = []
-    for key in runable_subsets:
-        instances.append(FACT_SUBSETS[key](module))
+    # Deterministic order (see SUBSET_ORDER); unlisted future subsets go last.
+    ordered_subsets = [s for s in SUBSET_ORDER if s in runable_subsets]
+    ordered_subsets += sorted(runable_subsets.difference(ordered_subsets))
+
+    facts = {"gather_subset": [ordered_subsets]}
+
+    instances = [FACT_SUBSETS[key](module) for key in ordered_subsets]
 
     for inst in instances:
         if inst:
