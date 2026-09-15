@@ -6,3 +6,5 @@ plugin_routing:
       redirect: sense.dellos10.dellos10
     dellos10_facts:
       redirect: sense.dellos10.dellos10
+    dellos10_bgpsummary:
+      redirect: sense.dellos10.dellos10
