@@ -59,7 +59,7 @@ def buildCommand(vrf, iptype):
 
 
 @functionwrapper
-def parseBgpSummaryXml(rawtext, iptype, peers):
+def parseBgpSummaryXml(rawtext, peersbyaddr):
     """Parse one AFI's 'display-xml' response, appending normalized peers."""
     for doc in splitXmlDocuments(rawtext):
         try:
@@ -76,9 +76,9 @@ def parseBgpSummaryXml(rawtext, iptype, peers):
                 uptimems = int(uptimems)
             except ValueError:
                 uptimems = 0
-            peers.append({
+            peersbyaddr[remoteaddr] = {
                 "peer": remoteaddr,
-                "iptype": iptype,
+                "iptype": "ipv6" if ":" in remoteaddr else "ipv4",
                 "local_asn": _toint(peerel.findtext("local-as")),
                 "remote_asn": _toint(peerel.findtext("remote-as")),
                 "state": normalizeBgpState(peerel.findtext("bgp-state") or ""),
@@ -86,7 +86,7 @@ def parseBgpSummaryXml(rawtext, iptype, peers):
                 "prefixes_received": _toint(peerel.findtext("in-prefixes")),
                 "prefixes_advertised": _toint(peerel.findtext("out-prefixes")),
                 "advertised_known": True,
-            })
+            }
 
 
 def _toint(value):
@@ -115,13 +115,13 @@ def main():
     wanttype = module.params["type"]
     wantafis = ["ipv4", "ipv6"] if wanttype == "both" else [wanttype]
 
-    peers = []
+    peersbyaddr = {}
     for iptype in wantafis:
         command = buildCommand(vrf, iptype)
         responses = run_commands(module, [command])
-        parseBgpSummaryXml(responses[0] if responses else "", iptype, peers)
+        parseBgpSummaryXml(responses[0] if responses else "", peersbyaddr)
 
-    bgp_summary = {"vrf": vrf or None, "afi_checked": wantafis, "peers": peers}
+    bgp_summary = {"vrf": vrf or None, "afi_checked": wantafis, "peers": list(peersbyaddr.values())}
 
     module.exit_json(changed=False, warnings=warnings, bgp_summary=bgp_summary)
 
